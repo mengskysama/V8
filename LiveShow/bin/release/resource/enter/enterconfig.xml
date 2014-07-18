@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--name将会替换成盖章 冠官方代理-->
+<config>
+  <Enter>
+    <VipLevel>8</VipLevel>
+    <Html>&lt;span style="font-size:12px; color:#ff0000"&gt;【提示】：VipImage 银色皇冠name进入房间&lt;/span&gt;</Html>
+  </Enter>
+  <Enter>
+    <VipLevel>16</VipLevel>
+    <Html>&lt;span style="font-size:12px; color:#ff0000"&gt;【提示】：VipImage 金色皇冠name进入房间&lt;/span&gt;</Html>
+  </Enter>
+  <Enter>
+    <VipLevel>32</VipLevel>
+    <Html>&lt;span style="font-size:12px; color:#ff0000"&gt;【提示】：VipImage 水晶皇冠name进入房间&lt;/span&gt;</Html>
+  </Enter>
+ 
+  <Enter>
+    <VipLevel>64</VipLevel>
+    <Html>&lt;span style="font-size:12px; color:#ff0000"&gt;&lt;img src="images/4.gif"&gt;&lt;B&gt;VipImage 钻石皇冠name隆重登场&lt;/B&gt;&lt;/span&gt;</Html>
+  </Enter>
+  <Enter>
+    <VipLevel>96</VipLevel>
+    <Html>&lt;span style="font-size:12px; color:#ff0000"&gt;&lt;img src="images/6.gif"&gt;&lt;B&gt;VipImage 黑钻皇冠name隆重登场&lt;/B&gt;&lt;/span&gt;</Html>
+  </Enter>
+  <Enter>
+    <VipLevel>128</VipLevel>
+    <Html>&lt;span style="font-size:12px; color:#ff0000"&gt;&lt;img src="images/5.gif"&gt;&lt;B&gt;伴随着尖叫和呐喊，VipImage 至尊皇冠name隆重登场&lt;/B&gt;&lt;/span&gt;</Html>
+  </Enter>
+</config>

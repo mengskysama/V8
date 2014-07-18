@@ -1,0 +1,32 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(258EB055-D5C0-4705-AC1C-8369A397C47A),
+	dual,
+	nonextensible,
+	helpstring("I179Plugin Interface"),
+	pointer_default(unique)
+]
+interface I179Plugin : IDispatch
+{
+	[id(1), helpstring("method GetVersion")] HRESULT GetVersion([out,retval] UINT* pbOk);
+};
+[
+	uuid(C9ED99B6-2266-4B00-8690-9DA760840DDD),
+	version(1.0),
+	helpstring("x179Plugin 1.0 Type Library")
+]
+library xPluginLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(D7AA3061-C959-4D65-B029-DC6FA761FDDD),
+		helpstring("x179PluginObj Class")
+	]
+	coclass xPluginObj
+	{
+		[default] interface I179Plugin;
+	};
+};

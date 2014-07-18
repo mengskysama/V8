@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<config>
+	<ListEffect Index="1">
+	  <Time value="2013:01:26:13:11:00"></Time>
+	  <Image path="Wealthy.png"></Image>
+	  <User>
+	  </User>
+	</ListEffect>
+	<ListEffect Index="2">
+	  <Time value="2013:01:26:13:11:00"></Time>
+	  <Image path="DiamondRing.png"></Image>
+	  <User>
+      <UserID ID="526526"/>
+	  </User>
+	</ListEffect>
+</config>

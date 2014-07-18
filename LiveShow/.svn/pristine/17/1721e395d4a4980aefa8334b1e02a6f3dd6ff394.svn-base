@@ -1,0 +1,23 @@
+﻿body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, code,
+form,fieldset, legend, input, button,
+textarea, p, blockquote, th, td {margin: 0;padding: 0;}
+fieldset,img,button{border: 0;}
+ul,ol{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+small{font-size:12px;}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%;}
+label,input,select,form,img,button,textarea{vertical-align:middle;}
+address, caption, cite, code, dfn,
+em, th, optgroup{font-style: normal;font-weight: normal;}	
+*html{background-image:url(about:blank); background-attachment:fixed}
+body,button,input,select,textarea{font:12px/1.5 \5b8b\4f53,arial}	
+html,body{height:100%;overflow:hidden}	
+.clear:after{ content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clear{display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clear {height: 1%;} 
+.clear{display: block;} 
+/* End hide from IE-mac */

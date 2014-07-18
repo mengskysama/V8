@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--name将会替换成用户自己的用户名-->
+<config>
+  <Welcome>
+	name呀name，你怎么才来啊/可怜兮兮/人家等着好着急呢/可怜兮兮/
+  </Welcome>
+  <Welcome>
+	name，我爱你/媚眼/ name，我爱你/媚眼/ name，我爱你/媚眼/
+  </Welcome>
+  <Welcome>
+    name，掌声响起来/拍手//拍手//拍手/ name，彩条刷起来！/拍手//拍手//拍手/
+  </Welcome>
+  <Welcome>
+    name来了，唱得那么好听，name，快给我加加油吧！/脸红//脸红//脸红/
+  </Welcome>
+  <Welcome>
+	name /色咪咪/ name /色咪咪/ name /色咪咪/ name /色咪咪/
+  </Welcome>
+  <Welcome>
+	天皇巨星name驾到/色咪咪/，快给我签个名吧，还要唇印哦/红唇//红唇//红唇/
+  </Welcome>
+  <Welcome>
+	name，name，name，你的热情好像一把火，燃烧了整个沙漠。/奥特曼//奥特曼//奥特曼/
+  </Welcome>
+  <Welcome>
+	name，name，name，每次见到你，满心都欢喜/大家好//大家好//大家好/
+  </Welcome>
+  <Welcome>
+	name，不要吝啬你的彩条和礼物哦，踊跃的砸过来吧/开心//开心//开心/
+  </Welcome>
+  <Welcome>
+	欢迎你，name /送花/欢迎你，name /送花/欢迎你，name /送花/
+  </Welcome>
+  <Welcome>
+	亲爱的name，快把你的彩条刷起来，让我看见你的名字哦！/挑逗//挑逗//挑逗/
+  </Welcome>
+  <Welcome>
+	name /窃笑/，喜欢麦上宝贝的话，就刷起靓丽的彩条哦，谢谢name /扑倒//扑倒//扑倒/
+  </Welcome>
+  <Welcome>
+	name呀name，这里的表演很精彩，请不要假装不理不睬！/求求你//求求你//求求你/
+  </Welcome>
+  <Welcome>
+	name看这里/激动/，name看这里/激动/，我需要你的呐喊和尖叫！/激动/
+  </Welcome>
+  <Welcome>
+	name，这里有火一样的热情，/送礼物/ name，这里的热情燃烧你我！/送礼物/
+  </Welcome>
+    <Welcome>
+	name，name，你是我天边最美的云彩，让我用心把你留下来！/扭//扭//扭/
+  </Welcome>
+  <Welcome>
+	name啊name，走过路过不要错过，这里的表演很精彩哟/哇//哇//哇/
+  </Welcome>
+  <Welcome>
+   亲爱的name，我会一直陪在你的身旁，让你乐悠悠/得瑟//得瑟//得瑟/
+  </Welcome>
+  <Welcome>
+   name呀name，这里的节奏最呀最摇摆，这里的歌声最呀最开怀！/卖萌//卖萌//卖萌/
+  </Welcome>
+  <Welcome>
+   hi，想要和我私密聊天吗？快找销售办个会员吧~/色咪咪//色咪咪//色咪咪/
+  </Welcome>
+  <Welcome>
+   想要和我更近一步？想要和我一对一视频？快去联系下官方销售吧，她们会教你哦！/挑逗//挑逗//挑逗/
+  </Welcome>
+  <Welcome>
+   亲，欢迎来到白兔KTV，你想要畅快聊天无限制吗？快加入VIP阵营吧！/开心//开心//开心/
+  </Welcome>
+  <Welcome>
+   亲爱的，你喜欢我吗？喜欢我就一定要送礼物支持我喔！/哇//哇//哇/
+  </Welcome>
+  <Welcome>
+   哇，聊天信息太多我都看不过来了，你快去办个VIP吧，我们就可以私聊啦。/求求你//求求你//求求你/
+  </Welcome>
+  
+  
+  
+  <ActorSpeak>
+   亲，你好啊~欢迎来我们房间玩~
+  </ActorSpeak>
+  <ActorSpeak>
+   来了啊，么么哒~
+  </ActorSpeak>
+  <ActorSpeak>
+   哈哈，我今天很开心，好多人收藏了我们房间哦~
+  </ActorSpeak>
+  <ActorSpeak>
+   大爷，玩得开心哦~
+  </ActorSpeak>
+  <ActorSpeak>
+   喜欢我吗，经常来捧个场哦~
+  </ActorSpeak>
+  <ActorSpeak>
+   喜欢我的话，可以收藏房间哟~以后就方便来找我啦~
+  </ActorSpeak>
+  <ActorSpeak>
+   礼轻情谊重，有钱的捧个钱场，没钱的捧个人场~
+  </ActorSpeak>
+  <ActorSpeak>
+   感谢您对本房间的支持，在房间多呆一会，姐妹们会给您带来更多精彩节目~
+  </ActorSpeak>
+  <ActorSpeak>
+   千里姻缘一线牵，找到您心爱的主播了吗？
+  </ActorSpeak>
+  <ActorSpeak>
+   有朋自远方来，热烈欢迎~
+  </ActorSpeak>
+  
+  
+  <AgentSpeak>
+   有啥问题，就找我哈
+  </AgentSpeak>
+  <AgentSpeak>
+   需要帮忙吗？
+  </AgentSpeak>
+  <AgentSpeak>
+   官方认证销售昵称前面都带“售”字标记，谨防假冒哦~
+  </AgentSpeak>
+  <AgentSpeak>
+   欢迎大驾光临
+  </AgentSpeak>
+  <AgentSpeak>
+   我是这儿的官方认证销售，有事情可以咨询我哟~
+  </AgentSpeak>
+  <AgentSpeak>
+   今天玩的开心吗？
+  </AgentSpeak>
+  <AgentSpeak>
+   有看上的妹纸吗？
+  </AgentSpeak>
+  <AgentSpeak>
+   这里的表演不错的，多停留一会儿吧。
+  </AgentSpeak>
+  
+</config>

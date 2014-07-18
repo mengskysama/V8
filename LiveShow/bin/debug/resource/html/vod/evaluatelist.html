@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>歌曲评价</title>
+<link href="source/base.css" rel="stylesheet" type="text/css" />
+<link href="source/vod.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="wrap clearfix">
+	<p class="tr f12 hill_music_text">当前需评价歌曲 <em class="fontfb fb">0</em> 首</p>
+    
+    <div class="hill_MusicList clearfix">
+    	<div class="MusicList_Item">
+			<dl>
+                <dt class="w85 tc">时间</dt>
+                <dt class="w170">歌名</dt>
+                <dt class="w170">歌手</dt>
+                <dt class="w270 tc">我的评价</dt>
+            </dl>
+
+			<div id="list"></div>
+		</div>
+        
+		<div class="pageView"></div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.json-2.4.min.js"></script>
+<script type="text/javascript" src="source/vod.js"></script>
+<script type="text/javascript">
+
+function showEmptyOfEvaluate(){
+	var content = '<div class="comment_none">';
+        content += '  <p>当前没有需要评价的歌</p>';
+        content += '  <p>快去点歌吧 <a href="javascript:void(0);" class="go_btn" onclick="vodOpenOrderSong()"></a></p>';
+        content += '</div>';
+		
+    //展示歌曲总数
+	$(".hill_music_text > em").text(vodVarSongNum);
+		
+	//展示列表内容
+	$("#list").html(content);
+	
+	//调用分页
+	$(".pageView").html('');
+}
+
+function showEvaluateListInfo(currPage){
+
+	var perPage = 8;
+	
+	if(currPage==0){
+		currPage = 1;
+	}
+	
+	var offset = (currPage-1) * perPage;
+	if(perPage > vodVarSongNum){
+		var len = offset + vodVarSongNum;
+	}else{
+		var len = offset + perPage;
+	}
+	
+	if(len > vodVarSongNum){
+		var len = vodVarSongNum;
+	}
+	
+	var content = '';
+	for(var item = offset; item < len; item++){
+		content += '<dl>';
+		content += '  <dd class="w85 tc"><em class="c8">'+vodVarEvaluateList[item].time+'</em></dd>';
+		content += '  <dd class="w170">'+vodVarEvaluateList[item].song+'</dd>';
+		content += '  <dd class="w170">'+vodVarEvaluateList[item].RoleName+'</dd>';
+		
+		content += '  <dd class="w270">';
+		content += '    <a href="javascript:void(0);" class="evaluate_btn1" onclick="vodDecideEvaluate('+ vodVarEvaluateList[item].orderID +', 3)">好评</a> ';
+		content += '    <a href="javascript:void(0);" class="evaluate_btn2" onclick="vodDecideEvaluate('+ vodVarEvaluateList[item].orderID +', 2)">差评</a> ';
+		content += '    <a href="javascript:void(0);" class="evaluate_btn3" onclick="vodDecideEvaluate('+ vodVarEvaluateList[item].orderID +', 1)">弃评</a> ';
+		content += '  </dd>';
+		content += '</dl>';
+	}
+	
+	//展示歌曲总数
+	$(".hill_music_text > em").text(vodVarSongNum);
+	
+	//展示列表内容
+	$("#list").html(content);
+	
+	//调用分页
+	var pageStr = vodAjaxPage('showEvaluateListInfo', vodVarSongNum, currPage, perPage);
+	$(".pageView").html(pageStr);
+}
+</script>
+</body>
+</html>

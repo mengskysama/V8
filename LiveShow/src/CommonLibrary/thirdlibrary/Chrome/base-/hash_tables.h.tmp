@@ -1,0 +1,87 @@
+// Copyright (c) 2006-2008 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+//
+
+//
+// Deal with the differences between Microsoft and GNU implemenations
+// of hash_map. Allows all platforms to use |base::hash_map| and
+// |base::hash_set|.
+//  eg: 
+//   base::hash_map<int> my_map;
+//   base::hash_set<int> my_set;
+//
+
+                            
+                            
+
+                               
+
+                          
+                   
+                   
+                
+                       
+                       
+ 
+                           
+                       
+                       
+                         
+                
+                          
+                          
+ 
+
+                                                                         
+                                        
+                     
+
+          
+                       
+                                             
+                                               
+   
+  
+
+          
+                             
+                                             
+                                               
+   
+  
+
+          
+                           
+                                                  
+                                             
+   
+  
+
+          
+                                 
+                                                  
+                                             
+   
+  
+
+          
+                          
+                                                 
+                                            
+   
+  
+
+          
+                                
+                                                 
+                                            
+   
+    
+
+ 
+
+      
+
+        // BASE_HASH_TABLES_H__
+

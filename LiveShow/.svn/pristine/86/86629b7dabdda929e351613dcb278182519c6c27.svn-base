@@ -1,0 +1,813 @@
+// Skin.idl : type library source for Skin.dll
+// This file will be processed by the MIDL compiler to produce the
+// type library (Skin.tlb).
+
+#include "olectl.h"
+#include "olectl.h"
+
+typedef enum tagJSENGINE_STATE 
+{
+    JSENGINE_INIT = 0,
+    JSENGINE_LOAD = 1,
+    JSENGINE_RUN = 2,
+    JSENGINE_CLOSE = 3,
+} JSENGINE_STATE;
+
+typedef struct tagANIMATEINFO 
+{
+	long bkColorIndex;
+	long bkColor;
+} ANIMATEINFO, *LPANIMATEINFO;
+
+typedef struct tagFRAMEINFO 
+{
+	long delayTime;
+	long disposalMethod;
+	long bkColorIndex;
+	long bkColor;
+} FRAMEINFO, *LPFRAMEINFO;
+
+[ uuid(17EC7DDD-4730-4E8C-BC85-CFAE1B180975), version(1.0) ]
+library Skin
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+    [ uuid(A2635BBD-0F2A-448f-AF2C-CFB86F488319) ]
+    interface IImage : IUnknown
+    {
+        [id(1), helpstring("method get_Width")] HRESULT get_Width([out] UINT* pWidth);
+        [id(2), helpstring("method get_Height")] HRESULT get_Height([out] UINT* pHeight);
+        [id(3), helpstring("method Render")] HRESULT Render([in] HDC hDC, [in] LPCRECT pDstRect, [in] LPCRECT pSrcRect, [in] LPCRECT pBoundRect);
+    }
+
+    [ uuid(AD4AE486-C4F8-48dc-B408-46B7E8BB6684) ]
+    interface IAnimation : IUnknown
+    {
+        [id(1), helpstring("method GetNumFrames")] HRESULT GetNumFrames([out] UINT* pNumFrames);
+        [id(2), helpstring("method GetAnimationInfo")] HRESULT GetAnimationInfo([out] LPANIMATEINFO pAnimationInfo);
+        [id(3), helpstring("method GetFrameInfo")] HRESULT GetFrameInfo([in] UINT uFrame, [out] LPFRAMEINFO pFrameInfo);
+        [id(4), helpstring("method RenderFrame")] HRESULT RenderFrame([in] HDC hDC, [in] UINT uFrame, [in] LPCRECT pDstRect);
+    }
+
+    [ uuid(C35AD193-80BA-48fd-8AFF-66307EFF6D56) ]
+    interface IImageEx : IUnknown
+    {
+        [id(1), helpstring("method RenderEx")] HRESULT RenderEx([in] HDC hDC, [in] LPCRECT pDstRect, [in] VARIANT_BOOL bFrame);
+        [id(2), helpstring("method CreateHBITMAP")] HRESULT CreateHBITMAP([in] HDC hDC, [out] HBITMAP* pHBITMAP);
+    }
+
+	[ uuid(7F0536A8-ED3F-43b8-816C-137A695185B6) ]
+    interface IJSEngine : IUnknown
+    {
+        [id(1), helpstring("method InitNew")] HRESULT InitNew();
+        [id(2), helpstring("method Load")] HRESULT Load([in] BSTR bstrScript, [in] BSTR bstrScriptName);
+        [id(3), helpstring("method Run")] HRESULT Run([out] VARIANT* pVarResult);
+        [id(4), helpstring("method Close")] HRESULT Close();
+        [id(5), helpstring("method GetState")] HRESULT GetState([out] JSENGINE_STATE* pState);
+        [id(6), helpstring("method GetProperty")] HRESULT GetProperty([in] BSTR propName, [out] VARIANT* pPropValue);
+        [id(7), helpstring("method SetProperty")] HRESULT SetProperty([in] BSTR propName, [in] VARIANT* pPropValue);
+        [id(8), helpstring("method CallFunction")] HRESULT CallFunction([in] BSTR bstrFuncName, [out] VARIANT* pVarResult, [in] DISPPARAMS* pDispParams);
+    };
+
+	//  Primary dispatch interface for SkinEngine
+		
+	[ uuid(91424951-C708-40A4-A0E3-C0A795A1110A) ]
+	interface ISkinEngine : IDispatch
+	{
+		[id(1), helpstring("method LoadSkin")] HRESULT LoadSkin([in] HWND hWnd,  [in] BSTR bstrSkinName);
+		[id(2), helpstring("method UnloadSkin")] HRESULT UnloadSkin([in] HWND hWnd);
+		[id(3), helpstring("method IsSkined")] HRESULT IsSkined([in] HWND hWnd, [out]VARIANT_BOOL* pBool);
+		[id(4), helpstring("method GetSkinPath")] HRESULT GetSkinPath([out] BSTR* bstrSkinPath);
+		[id(5), helpstring("method SetSkinPath")] HRESULT SetSkinPath([in] BSTR bstrSkinPath);
+		[id(6), helpstring("method LoadSkinPack")] HRESULT LoadSkinPack([in] BSTR bstrSkinPack);
+		[id(7), helpstring("method SetModuleState")] HRESULT SetModuleState([in] LONG lpModuleState);
+		[id(8), helpstring("method GetSubSkinProp")] HRESULT GetSubSkinProp([in] HWND skinWindowHwnd, [in] BSTR bstrSubSkinName, [in] BSTR bstrPropName, [out] VARIANT* pVarValue);
+		[id(9), helpstring("method SetSubSkinProp")] HRESULT SetSubSkinProp([in] HWND skinWindowHwnd, [in] BSTR bstrSubSkinName, [in] BSTR bstrPropName, [in] VARIANT varValue);
+		[id(10),helpstring("method CallSubSkinMethod")] HRESULT CallSubSkinMethod([in] HWND skinWindowHwnd, [in] BSTR bstrSubSkinName, [in] BSTR bstrFuncName, [out] VARIANT* pVarResult, [in] DISPPARAMS* pDispParams);
+		[id(11),helpstring("method GetSubSkinPos")] HRESULT GetSubSkinPos([in] HWND skinWindowHwnd, [in] BSTR bstrSubSkinName, [out] LONG* pLeft, [out] LONG* pTop, [out] LONG* pRight, [out] LONG* pBottom);
+		[id(12),helpstring("method InvalidateSubSkinRect")] HRESULT InvalidateSubSkinRect([in] HWND skinWindowHwnd, [in] BSTR bstrSubSkinName, [in] LONG left, [in] LONG top, [in] LONG width, [in] LONG height, [in] LONG bErase);
+		[id(13), helpstring("method GetDefaultImageTransformParam")] HRESULT GetDefaultImageTransformParam([out] UINT* pTransformType, [out] LONG* pWidth, [out] LONG* pHeight, 
+				[out] LONG* pHue, [out] LONG* pSat, [out] FLOAT* pBlend, 
+				[out] LONG* pR, [out] LONG* pG, [out] LONG* pB);
+		[id(14), helpstring("method SetDefaultImageTransformParam")] HRESULT SetDefaultImageTransformParam([in] UINT uTransformType, [in] LONG width, [in] LONG height, 
+				[in] LONG hue, [in] LONG sat, [in] FLOAT blend, 
+				[in] LONG r, [in] LONG g, [in] LONG b);
+		[id(15), helpstring("method GetTransformedColor")] HRESULT GetTransformedColor([in] LONG color, [out] LONG* pTransformedColor, [in] UINT uTransformType, 
+				[in] LONG hue, [in] LONG sat, [in] FLOAT blend, 
+				[in] LONG r, [in] LONG g, [in] LONG b);
+		[id(16), helpstring("method TransformColor")] HRESULT TransformColor([in] LONG color, [out] LONG* pTransformedColor);
+		[id(17), helpstring("method PreTranslateMessage")] HRESULT PreTranslateMessage([in] HWND hWnd, [in] UINT uMsg, [in] LONG wParam, [in] LONG lParam, [in] DWORD time, [in] LONG x, [in] LONG y, [in]LONG bFilterIMM);
+		[id(18), helpstring("method CreateJSEngine")] HRESULT CreateJSEngine([out] IUnknown** ppJSEngine);
+		[id(19), helpstring("method SetGlobalMessageReceiver")] HRESULT SetGlobalMessageReceiver([in] HWND hWnd);
+	};
+
+	//  Class information for SkinEngine
+
+	[ uuid(C02E7228-4E76-44C5-8652-BC34AEC7948E) ]
+	coclass SkinEngine
+	{
+		[default] interface ISkinEngine;
+	};
+	//  Primary dispatch interface for SkinItemDialog
+		
+	[ uuid(FDC27E47-ADE9-42BE-8CE9-19DDE0831D37) ]
+	dispinterface  ISkinItemDialog
+	{
+		properties:
+		[id(1), helpstring("property minWidth")]   LONG minWidth;
+		[id(2), helpstring("property minHeight")]  LONG minHeight;
+		[id(3), helpstring("property maxWidth")]   LONG maxWidth;
+		[id(4), helpstring("property maxHeight")]  LONG maxHeight;
+		[id(5), helpstring("property width")]      LONG width;
+		[id(6), helpstring("property height")]     LONG height;
+		[id(7), helpstring("property TitleHeight")]  LONG TitleHeight;
+		[id(8), helpstring("property TitleHeight")]  VARIANT_BOOL Max;
+		[id(20), helpstring("property bDragHandleBottomRight")]  VARIANT_BOOL bDragHandleBottomRight;
+		methods:
+		[id(9), helpstring("method ShowWindow")] void ShowWindow(LONG nCmdShow);
+		[id(10), helpstring("method BeginPaint")] void BeginPaint();
+		[id(11), helpstring("method EndPaint")] void EndPaint();
+		[id(12), helpstring("method AttachEvent")] VARIANT_BOOL AttachEvent(BSTR bstrFun, IDispatch* pDisp);
+		[id(13), helpstring("method SendSkinMessage")] LONG SendSkinMessage(LONG lCode,long lParam);
+		[id(14), helpstring("method DebugShow")] void DebugShow(VARIANT* pvarShow);
+	};
+
+	//  Class information for SkinItemDialog
+
+	[ uuid(D63F6287-1606-4592-BACC-114337D5DF5B) ]
+	coclass SkinItemDialog
+	{
+		[default] dispinterface ISkinItemDialog;
+	};
+	//  Primary dispatch interface for SkinButton
+	
+
+	[ uuid(14703C10-706C-40CB-AC25-1F0FD76CD383) ]
+	dispinterface ISkinButton
+	{
+		properties:
+		[id(1), helpstring("property left")] LONG left;
+		[id(2), helpstring("property top")] LONG top;
+		[id(3), helpstring("property width")] LONG width;
+		[id(4), helpstring("property height")] LONG height;
+		[id(5), helpstring("property visible")] LONG visible;
+		[id(6), helpstring("property disabled")] LONG disabled;
+		[id(7), helpstring("property cursor")] BSTR cursor;
+		[id(8), helpstring("property image")] BSTR image;
+		[id(9), helpstring("property hoverimage")] BSTR hoverimage;
+		[id(10), helpstring("property downimage")] BSTR downimage;
+		[id(11), helpstring("property label")] BSTR label;
+		[id(12), helpstring("property ico")] BSTR ico;
+		[id(13), helpstring("property tip")] BSTR tip;
+		[id(15), helpstring("属性 hyperLink")] VARIANT_BOOL hyperLink;
+		[id(16), helpstring("属性 hyperLinkAddress")] BSTR hyperLinkAddress;
+methods:
+		[id(14), helpstring("method AttachEvent")] VARIANT_BOOL AttachEvent(BSTR bstrFun, IDispatch* pDisp);
+	};
+
+	//  Class information for SkinButton
+
+	[ uuid(7E423F8A-C537-4DE4-9442-B235297DC013) ]
+	coclass SkinButton
+	{
+		[default] dispinterface ISkinButton;
+	};
+	//  Primary dispatch interface for SkinText
+		
+	[ uuid(29FD8AF3-2631-42DA-8316-70C37B9A9988) ]
+	dispinterface ISkinText
+	{
+		properties:
+		[id(9), helpstring("property name")] BSTR name;
+		[id(1), helpstring("property left")] LONG left;
+		[id(2), helpstring("property top")] LONG top;
+		[id(3), helpstring("property width")] LONG width;
+		[id(4), helpstring("property height")] LONG height;
+		[id(5), helpstring("property visible")] VARIANT_BOOL visible;
+		[id(6), helpstring("property disabled")] VARIANT_BOOL disabled;
+		[id(7), helpstring("property cursor")] BSTR cursor;
+
+		[id(20), helpstring("property text")] BSTR text;
+
+		[id(21), helpstring("property fontSize")] LONG fontSize;
+		[id(22), helpstring("property italic")] VARIANT_BOOL italic;
+		[id(23), helpstring("property underline")] VARIANT_BOOL underline;
+		[id(24), helpstring("property strikeOut")] VARIANT_BOOL strikeOut;
+		[id(25), helpstring("property fontFamily")] BSTR fontFamily;
+
+		[id(26), helpstring("property normalColor")] LONG normalColor;
+		[id(27), helpstring("property hoverColor")] LONG hoverColor;
+		[id(28), helpstring("property downColor")] LONG downColor;
+
+		[id(29), helpstring("property adjustEnable")] VARIANT_BOOL adjustEnable;
+		[id(30), helpstring("property wordBreak")] VARIANT_BOOL wordBreak;
+		[id(31), helpstring("property singleLine")] VARIANT_BOOL singleLine;
+		[id(32), helpstring("property maxWidth")] LONG maxWidth;
+		[id(33), helpstring("property maxHeight")] LONG maxHeight;
+		[id(34), helpstring("property horizAlign")] BSTR horizAlign;
+		[id(35), helpstring("property vertiAlign")] BSTR vertiAlign;
+		[id(36), helpstring("property scrollable")] VARIANT_BOOL scrollable;
+		[id(37), helpstring("property scrollDirection")] BSTR scrollDirection;
+		[id(38), helpstring("property scrollSpeed")] BSTR scrollSpeed;
+		methods:
+		[id(8), helpstring("method AttachEvent")] VARIANT_BOOL AttachEvent(BSTR bstrFun, IDispatch* pDisp);
+	};
+
+	//  Class information for SkinText
+
+	[ uuid(B2039E30-5D4A-47AD-AA38-DF10C64944E9) ]
+	coclass SkinText
+	{
+		[default] dispinterface ISkinText;
+	};
+	//  Primary dispatch interface for SkinImage
+		
+	[ uuid(2C500D0F-D872-406D-AA5B-D02208364C58) ]
+	dispinterface ISkinImage
+	{
+		properties:
+		[id(1), helpstring("property left")] LONG left;
+		[id(2), helpstring("property top")] LONG top;
+		[id(3), helpstring("property width")] LONG width;
+		[id(4), helpstring("property height")] LONG height;
+		[id(5), helpstring("property visible")] LONG visible;
+		[id(6), helpstring("property value")] BSTR image;
+		methods:
+	};
+
+	//  Class information for SkinImage
+
+	[ uuid(FC7E311D-DA6E-4461-B366-DED5E67252F5) ]
+	coclass SkinImage
+	{
+		[default] dispinterface ISkinImage;
+	};
+	//  Primary dispatch interface for SkinItem
+		
+	[ uuid(D52A4535-1BB2-497D-95C1-76D33D0D122E) ]
+	dispinterface ISkinItem
+	{
+		properties:
+		[id(1), helpstring("property left")] LONG left;
+		[id(2), helpstring("property top")] LONG top;
+		[id(3), helpstring("property width")] LONG width;
+		[id(4), helpstring("property height")] LONG height;
+		[id(5), helpstring("property visible")] LONG visible;
+		[id(6), helpstring("property disabled")] LONG disabled;
+		[id(7), helpstring("property itemID")] LONG itemID;
+		[id(8), helpstring("property selfOnPaint")] LONG selfOnPaint;
+		[id(10), helpstring("property bkMode")] BSTR bkMode;
+		[id(11), helpstring("property bkColorNormal")] LONG bkColorNormal;
+		[id(12), helpstring("property bkColorDisabled")] LONG bkColorDisabled;
+		[id(13), helpstring("property text")] BSTR text;
+		[id(14), helpstring("property textColorNormal")] LONG textColorNormal;
+		[id(15), helpstring("property textColorDisabled")] LONG textColorDisabled;
+		[id(16), helpstring("property textHorizAlign")] BSTR textHorizAlign;
+		[id(17), helpstring("property textVertiAlign")] BSTR textVertiAlign;
+		[id(18), helpstring("property bkImageNormal")] BSTR bkImageNormal;
+		[id(19), helpstring("property bkImageDisabled")] BSTR bkImageDisabled;
+		methods:
+		[id(9), helpstring("method Update")] void Update(void);
+	};
+
+	//  Class information for SkinItem
+
+	[ uuid(BA7EE323-1B74-456A-87F6-2F5468680F2D) ]
+	coclass SkinItem
+	{
+		[default] dispinterface ISkinItem;
+	};
+	//  Primary dispatch interface for SkinTab
+		
+	[ uuid(80C22F40-9F02-45F0-A608-4D10DF73EBE7) ]
+	dispinterface ISkinTab
+	{
+		properties:
+		[id(1), helpstring("property left")] LONG left;
+		[id(2), helpstring("property top")] LONG top;
+		[id(3), helpstring("property width")] LONG width;
+		[id(4), helpstring("property height")] LONG height;
+		[id(5), helpstring("property visible")] LONG visible;
+		[id(6), helpstring("property gif")] BSTR gif;
+		methods:
+		[id(7), helpstring("method start")] void start();
+		[id(8), helpstring("method stop")] void stop();
+	};
+
+	//  Class information for SkinTab
+
+	[ uuid(273A6A96-3590-4C14-856E-FA8BEFEFAD87) ]
+	coclass SkinTab
+	{
+		[default] dispinterface ISkinTab;
+	};
+
+	//  SkinProgress 的主调度接口
+		
+	[ uuid(8A397DD1-9D50-4E05-A2C7-41106310F836) ]
+	dispinterface ISkinProgress
+	{
+		properties:
+		[id(1), helpstring("property left")] LONG left;
+		[id(2), helpstring("property top")] LONG top;
+		[id(3), helpstring("property width")] LONG width;
+		[id(4), helpstring("property height")] LONG height;
+		[id(5), helpstring("property range")] LONG range;
+		[id(6), helpstring("property pos")] LONG pos;
+		[id(7), helpstring("property backimage")] BSTR backimage;
+		[id(8), helpstring("property posimage")] BSTR posimage;
+		[id(9), helpstring("property visible")] LONG visible;
+		methods:
+	};
+
+	//  SkinProgress 的类信息
+
+	[ uuid(35ED3931-2447-4FE6-9370-3455521426C8) ]
+	coclass SkinProgress
+	{
+		[default] dispinterface ISkinProgress;
+	};
+	//  SkinItemCombo 的主调度接口
+		
+	[ uuid(DC1E4C5A-3DE5-49E7-A9A2-B45160EF3C5C) ]
+	dispinterface ISkinItemCombo
+	{
+		properties:
+		[id(1), helpstring("property left")] LONG left;
+		[id(2), helpstring("property top")] LONG top;
+		[id(3), helpstring("property width")] LONG width;
+		[id(4), helpstring("property height")] LONG height;
+		[id(5), helpstring("property visible")] LONG visible;
+		[id(6), helpstring("property disabled")] LONG disabled;
+		[id(7), helpstring("property itemID")] LONG itemID;
+		[id(8), helpstring("property selfOnPaint")] LONG selfOnPaint;
+		[id(9), helpstring("property maxDropHeight")] LONG maxDropHeight;
+		methods:
+		[id(10), helpstring("method Update")] void Update(void);
+	};
+
+	//  SkinItemCombo 的类信息
+
+	[ uuid(672B3FCD-6CA9-4045-9240-924C82240CEC) ]
+	coclass SkinItemCombo
+	{
+		[default] dispinterface ISkinItemCombo;
+	};
+	//  SkinBase 的主调度接口
+		
+	[ uuid(F51592EC-DB76-4872-B417-457FEFCBE61C) ]
+	dispinterface ISkinBase
+	{
+		properties:
+		[id(1), helpstring("property name")] BSTR name;
+		[id(2), helpstring("property left")] LONG left;
+		[id(3), helpstring("property top")] LONG top;
+		[id(4), helpstring("property width")] LONG width;
+		[id(5), helpstring("property height")] LONG height;
+		[id(6), helpstring("property visible")] LONG visible;
+		[id(7), helpstring("property disabled")] LONG disabled;
+		methods:
+	};
+
+	//  SkinBase 的类信息
+
+	[ uuid(2BC27FC1-1F72-47BB-99C2-0E32174B08C2) ]
+	coclass SkinBase
+	{
+		[default] dispinterface ISkinBase;
+	};
+	//  SkinWndBase 的主调度接口
+		
+	[ uuid(0A20BE01-7A94-40BA-853B-A3F40AC5F7B7) ]
+	dispinterface ISkinWndBase
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinWndBase 的类信息
+
+	[ uuid(2EB5C7E9-8596-49FE-9B82-1AE4FE9C4CE1) ]
+	coclass SkinWndBase
+	{
+		[default] dispinterface ISkinWndBase;
+	};
+	//  SkinLibretto 的主调度接口
+		
+	[ uuid(A931C754-9ECC-43F9-9407-72BB9D6B5CDE) ]
+	dispinterface ISkinLibretto
+	{
+		properties:
+		[id(9), helpstring("property name")] BSTR name;
+		[id(1), helpstring("property left")] LONG left;
+		[id(2), helpstring("property top")] LONG top;
+		[id(3), helpstring("property width")] LONG width;
+		[id(4), helpstring("property height")] LONG height;
+		[id(5), helpstring("property visible")] VARIANT_BOOL visible;
+		[id(6), helpstring("property disabled")] VARIANT_BOOL disabled;
+		[id(7), helpstring("property cursor")] BSTR cursor;
+
+		[id(20), helpstring("property text")] BSTR text;
+
+		[id(21), helpstring("property fontSize")] LONG fontSize;
+		[id(22), helpstring("property italic")] VARIANT_BOOL italic;
+		[id(23), helpstring("property underline")] VARIANT_BOOL underline;
+		[id(24), helpstring("property strikeOut")] VARIANT_BOOL strikeOut;
+		[id(25), helpstring("property fontFamily")] BSTR fontFamily;
+
+		[id(26), helpstring("property color")] LONG color;
+
+		[id(29), helpstring("property adjustEnable")] VARIANT_BOOL adjustEnable;
+		[id(30), helpstring("property wordBreak")] VARIANT_BOOL wordBreak;
+		[id(31), helpstring("property singleLine")] VARIANT_BOOL singleLine;
+		[id(32), helpstring("property maxWidth")] LONG maxWidth;
+		[id(33), helpstring("property maxHeight")] LONG maxHeight;
+		[id(34), helpstring("property horizAlign")] BSTR horizAlign;
+		[id(35), helpstring("property vertiAlign")] BSTR vertiAlign;
+
+		[id(38), helpstring("property hlFontSize")] LONG hlFontSize;
+		[id(39), helpstring("property hlItalic")] VARIANT_BOOL hlItalic;
+		[id(40), helpstring("property hlUnderline")] VARIANT_BOOL hlUnderline;
+		[id(41), helpstring("property hlStrikeOut")] VARIANT_BOOL hlStrikeOut;
+		[id(42), helpstring("property hlFontFamily")] BSTR hlFontFamily;
+
+		[id(43), helpstring("property hlColor")] LONG hlColor;
+		[id(46), helpstring("property backgroundImg")] BSTR backgroundImg;
+
+		methods:
+		[id(8), helpstring("method AttachEvent")] VARIANT_BOOL AttachEvent(BSTR bstrFun, IDispatch* pDisp);
+		[id(36), helpstring("method ClearLibretto")] void ClearLibretto(void);
+		[id(37), helpstring("method AppendLibretto")] void AppendLibretto(BSTR libre);
+		[id(44), helpstring("method SetCurLibretto")] void SetCurLibretto(LONG index);
+		[id(45), helpstring("method EndDisplay")] void EndDisplay(void);
+	};
+
+	//  SkinLibretto 的类信息
+
+	[ uuid(189B75CF-483A-4D0E-BD51-8AB391206BC9) ]
+	coclass SkinLibretto
+	{
+		[default] dispinterface ISkinLibretto;
+	};
+
+	//  SkinItemList 的主调度接口
+		
+	[ uuid(678EE389-A980-47E1-B076-60F652337566) ]
+	dispinterface ISkinItemList
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemList 的类信息
+
+	[ uuid(915ED03C-D2F8-45EF-8296-3B59DF57BCC1) ]
+	coclass SkinItemList
+	{
+		[default] dispinterface ISkinItemList;
+	};
+	//  Primary dispatch interface for SkinItemStatic
+		
+	[ uuid(6EC370AA-63E2-4589-870C-A65CDCB68CEA) ]
+	dispinterface ISkinItemStatic
+	{
+		properties:
+		methods:
+	};
+
+	//  Class information for SkinItemStatic
+
+	[ uuid(14C821C6-073E-4CB1-9E48-0E0BE236C0B7) ]
+	coclass SkinItemStatic
+	{
+		[default] dispinterface ISkinItemStatic;
+	};
+
+	//  SkinItemButton 的主调度接口
+		
+	[ uuid(B6B69964-591D-45C3-8FB9-8C753F550EF5) ]
+	dispinterface ISkinItemButton
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemButton 的类信息
+
+	[ uuid(A702D6BF-4296-42BC-B9BA-529D2A07C925) ]
+	coclass SkinItemButton
+	{
+		[default] dispinterface ISkinItemButton;
+	};
+
+	//  SkinTextStyle 的主调度接口
+
+	[ uuid(06A12AF4-0B00-4D87-9168-427211FD46F2) ]
+	dispinterface ISkinTextStyle
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinTextStyle 的类信息
+
+	[ uuid(6F3649EA-8298-4325-AB89-2A1CE7A5E4AE) ]
+	coclass SkinTextStyle
+	{
+		[default] dispinterface ISkinTextStyle;
+	};
+
+	//  SkinImageStyle 的主调度接口
+		
+	[ uuid(D8CFDFC4-4628-4DD7-B9C8-A8C7223BEBB7) ]
+	dispinterface ISkinImageStyle
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinImageStyle 的类信息
+
+	[ uuid(CF9EED20-C3E0-4E26-B0C2-B5DE9F89F641) ]
+	coclass SkinImageStyle
+	{
+		[default] dispinterface ISkinImageStyle;
+	};
+
+	//  SkinItemEdit 的主调度接口
+		
+	[ uuid(B7AFB598-5718-40FE-BC7A-7EB3EBD7CC79) ]
+	dispinterface ISkinItemEdit
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemEdit 的类信息
+
+	[ uuid(ABAD6771-04A1-481F-A04F-03515C1900E2) ]
+	coclass SkinItemEdit
+	{
+		[default] dispinterface ISkinItemEdit;
+	};
+	//  SkinItemAnimate 的主调度接口
+		
+	[ uuid(AC2B91D0-1017-4810-8878-A960F473460F) ]
+	dispinterface ISkinItemAnimate
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemAnimate 的类信息
+
+	[ uuid(6ABDF86F-1A1F-4EBC-95BF-15BF4192BAF0) ]
+	coclass SkinItemAnimate
+	{
+		[default] dispinterface ISkinItemAnimate;
+	};
+	//  SkinItemHeader 的主调度接口
+		
+	[ uuid(8904F929-D3FA-4F95-9B50-274ED8A50DE9) ]
+	dispinterface ISkinItemHeader
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemHeader 的类信息
+
+	[ uuid(8CE3297B-8EDE-4BFB-9EB7-5361C1492FFC) ]
+	coclass SkinItemHeader
+	{
+		[default] dispinterface ISkinItemHeader;
+	};
+	//  SkinItemProgress 的主调度接口
+		
+	[ uuid(19F76DC7-2B29-4ABE-B3CE-B11D58D3E624) ]
+	dispinterface ISkinItemProgress
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemProgress 的类信息
+
+	[ uuid(7638541C-297A-4051-BCCE-91FD5A8C5F0A) ]
+	coclass SkinItemProgress
+	{
+		[default] dispinterface ISkinItemProgress;
+	};
+	//  SkinItemScrollBar 的主调度接口
+		
+	[ uuid(818F4473-9AB9-4017-BC1B-D04394DEACF4) ]
+	dispinterface ISkinItemScrollBar
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemScrollBar 的类信息
+
+	[ uuid(1D510678-90A1-4F0F-A440-9327389A462F) ]
+	coclass SkinItemScrollBar
+	{
+		[default] dispinterface ISkinItemScrollBar;
+	};
+	//  SkinItemSlider 的主调度接口
+		
+	[ uuid(EE3ADE8C-C3DB-43A1-BE49-A76EBCDCBE3D) ]
+	dispinterface ISkinItemSlider
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemSlider 的类信息
+
+	[ uuid(E7F24884-272E-4AB0-9E96-777FC927BCBE) ]
+	coclass SkinItemSlider
+	{
+		[default] dispinterface ISkinItemSlider;
+	};
+	//  SkinItemTab 的主调度接口
+		
+	[ uuid(B547AA90-DB57-4205-B7BA-2D62AE026CC1) ]
+	dispinterface ISkinItemTab
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemTab 的类信息
+
+	[ uuid(F7DE59C4-5CF6-432B-A4D1-ECE537DF6615) ]
+	coclass SkinItemTab
+	{
+		[default] dispinterface ISkinItemTab;
+	};
+	//  SkinItemTree 的主调度接口
+		
+	[ uuid(73B3B8AA-D093-49C5-A98B-E07AA6D83A74) ]
+	dispinterface ISkinItemTree
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemTree 的类信息
+
+	[ uuid(D9A6C415-86E1-424E-A8CF-1DB9C52F0402) ]
+	coclass SkinItemTree
+	{
+		[default] dispinterface ISkinItemTree;
+	};
+
+	//  XmlCmdTarget 的主调度接口
+		
+	[ uuid(E0238822-17BB-43E9-91A1-F77B69B42C98) ]
+	dispinterface IXmlCmdTarget
+	{
+		properties:
+		methods:
+	};
+
+	//  XmlCmdTarget 的类信息
+
+	[ uuid(7207A6F3-8DDE-47DC-BC2E-BFE1AB7AEE08) ]
+	coclass XmlCmdTarget
+	{
+		[default] dispinterface IXmlCmdTarget;
+	};
+
+	//  SkinGroup 的主调度接口
+		
+	[ uuid(EFA20886-FD4A-445F-A162-25E4DD84703A) ]
+	dispinterface ISkinGroup
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinGroup 的类信息
+
+	[ uuid(EC6EE506-FF95-438D-B955-97625F385099) ]
+	coclass SkinGroup
+	{
+		[default] dispinterface ISkinGroup;
+	};
+	//  SkinItemGroup 的主调度接口
+		
+	[ uuid(540DEB4D-8322-4C53-983D-4942AA7B237A) ]
+	dispinterface ISkinItemGroup
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemGroup 的类信息
+
+	[ uuid(623BD64E-9E96-4DB7-A6DD-126390DD47EF) ]
+	coclass SkinItemGroup
+	{
+		[default] dispinterface ISkinItemGroup;
+	};
+
+	//  SkinSplitter 的主调度接口
+		
+	[ uuid(5480A98C-0A88-4696-A102-4964DB31D777) ]
+	dispinterface ISkinSplitter
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinSplitter 的类信息
+
+	[ uuid(8BDFDABC-DA04-429C-8309-213A29D9A2F8) ]
+	coclass SkinSplitter
+	{
+		[default] dispinterface ISkinSplitter;
+	};
+	//  SkinItemSplitter 的主调度接口
+		
+	[ uuid(A0BD99BE-1C40-46FB-AA24-652423F6DCF8) ]
+	dispinterface ISkinItemSplitter
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinItemSplitter 的类信息
+
+	[ uuid(FA66128A-44E0-4192-A535-10C10DC26CA7) ]
+	coclass SkinItemSplitter
+	{
+		[default] dispinterface ISkinItemSplitter;
+	};
+	//  SkinRoundImage 的主调度接口
+	
+	[ uuid(CC73E25D-DA05-4C0A-899D-ABCA0259C5D5) ]
+	dispinterface ISkinRoundImage
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinRoundImage 的类信息
+
+	[ uuid(6BD2ACC9-02F6-46DD-90D1-0BF38B9E2CD8) ]
+	coclass SkinRoundImage
+	{
+		[default] dispinterface ISkinRoundImage;
+	};
+	//  SkinProxy 的主调度接口
+		
+	[ uuid(371ABD97-6091-4FDB-A087-69FBC71AD861) ]
+	dispinterface ISkinProxy
+	{
+		properties:
+		methods:
+	};
+
+	//  SkinProxy 的类信息
+
+	[ uuid(087C294B-0695-433A-973A-C3EAD50A560D) ]
+	coclass SkinProxy
+	{
+		[default] dispinterface ISkinProxy;
+	};
+	//  Primary dispatch interface for SkinClass
+		
+	[ uuid(166E53A9-7AA5-4E7B-BF06-C3306BF46224) ]
+	dispinterface ISkinClass
+	{
+		properties:
+		methods:
+	};
+
+	//  Class information for SkinClass
+
+	[ uuid(C0106EC3-E7D3-4DEA-99F3-97C6BEB4DAAB) ]
+	coclass SkinClass
+	{
+		[default] dispinterface ISkinClass;
+	};
+	//  Primary dispatch interface for SkinLayout
+		
+	[ uuid(B181E76B-B65F-49FE-ACF2-5ED0499C5873) ]
+	dispinterface ISkinLayout
+	{
+		properties:
+		methods:
+	};
+
+	//  Class information for SkinLayout
+
+	[ uuid(5D8D1854-0B77-4276-92C5-3B72E45C5EF4) ]
+	coclass SkinLayout
+	{
+		[default] dispinterface ISkinLayout;
+	};
+};

@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FloatFR_aacPlusEnc", "FloatFR_aacPlusEnc.vcproj", "{96CBDCDE-B104-4397-A2C4-1E785F818A74}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C146280C-E8E9-480E-BD31-7EF587CFBF49} = {C146280C-E8E9-480E-BD31-7EF587CFBF49}
+		{87EF3E1D-70BA-4FCD-B34B-672A36E4BD5B} = {87EF3E1D-70BA-4FCD-B34B-672A36E4BD5B}
+		{C776E91A-9147-4A24-BD66-5359FCA2293C} = {C776E91A-9147-4A24-BD66-5359FCA2293C}
+		{EA1CB6F8-4140-421D-A32B-379BAEE173B5} = {EA1CB6F8-4140-421D-A32B-379BAEE173B5}
+		{6C4E3F87-2903-4059-A7C6-0E935D1461F0} = {6C4E3F87-2903-4059-A7C6-0E935D1461F0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FloatFR_aacenc", "FloatFR_fastaacenc\FloatFR_aacenc.vcproj", "{87EF3E1D-70BA-4FCD-B34B-672A36E4BD5B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FloatFR_bitbuflib", "FloatFR_bitbuflib\FloatFR_bitbuflib.vcproj", "{C776E91A-9147-4A24-BD66-5359FCA2293C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FloatFR_resamplib", "FloatFR_resamplib\FloatFR_resamplib.vcproj", "{EA1CB6F8-4140-421D-A32B-379BAEE173B5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FloatFR_sbrenclib_aac", "FloatFR_sbrenclib\FloatFR_sbrenclib_aac.vcproj", "{C146280C-E8E9-480E-BD31-7EF587CFBF49}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FloatFRlib", "FloatFRlib\FloatFRlib.vcproj", "{6C4E3F87-2903-4059-A7C6-0E935D1461F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CT Debug|Win32 = CT Debug|Win32
+		CT Mono Debug|Win32 = CT Mono Debug|Win32
+		CT Mono Release|Win32 = CT Mono Release|Win32
+		CT Release|Win32 = CT Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96CBDCDE-B104-4397-A2C4-1E785F818A74}.CT Debug|Win32.ActiveCfg = CT Debug|Win32
+		{96CBDCDE-B104-4397-A2C4-1E785F818A74}.CT Debug|Win32.Build.0 = CT Debug|Win32
+		{96CBDCDE-B104-4397-A2C4-1E785F818A74}.CT Mono Debug|Win32.ActiveCfg = CT Mono Debug|Win32
+		{96CBDCDE-B104-4397-A2C4-1E785F818A74}.CT Mono Debug|Win32.Build.0 = CT Mono Debug|Win32
+		{96CBDCDE-B104-4397-A2C4-1E785F818A74}.CT Mono Release|Win32.ActiveCfg = CT Mono Release|Win32
+		{96CBDCDE-B104-4397-A2C4-1E785F818A74}.CT Mono Release|Win32.Build.0 = CT Mono Release|Win32
+		{96CBDCDE-B104-4397-A2C4-1E785F818A74}.CT Release|Win32.ActiveCfg = CT Release|Win32
+		{96CBDCDE-B104-4397-A2C4-1E785F818A74}.CT Release|Win32.Build.0 = CT Release|Win32
+		{87EF3E1D-70BA-4FCD-B34B-672A36E4BD5B}.CT Debug|Win32.ActiveCfg = CT Debug|Win32
+		{87EF3E1D-70BA-4FCD-B34B-672A36E4BD5B}.CT Debug|Win32.Build.0 = CT Debug|Win32
+		{87EF3E1D-70BA-4FCD-B34B-672A36E4BD5B}.CT Mono Debug|Win32.ActiveCfg = CT Mono Debug|Win32
+		{87EF3E1D-70BA-4FCD-B34B-672A36E4BD5B}.CT Mono Debug|Win32.Build.0 = CT Mono Debug|Win32
+		{87EF3E1D-70BA-4FCD-B34B-672A36E4BD5B}.CT Mono Release|Win32.ActiveCfg = CT Mono Release|Win32
+		{87EF3E1D-70BA-4FCD-B34B-672A36E4BD5B}.CT Mono Release|Win32.Build.0 = CT Mono Release|Win32
+		{87EF3E1D-70BA-4FCD-B34B-672A36E4BD5B}.CT Release|Win32.ActiveCfg = CT Release|Win32
+		{87EF3E1D-70BA-4FCD-B34B-672A36E4BD5B}.CT Release|Win32.Build.0 = CT Release|Win32
+		{C776E91A-9147-4A24-BD66-5359FCA2293C}.CT Debug|Win32.ActiveCfg = CT Debug|Win32
+		{C776E91A-9147-4A24-BD66-5359FCA2293C}.CT Debug|Win32.Build.0 = CT Debug|Win32
+		{C776E91A-9147-4A24-BD66-5359FCA2293C}.CT Mono Debug|Win32.ActiveCfg = CT Mono Debug|Win32
+		{C776E91A-9147-4A24-BD66-5359FCA2293C}.CT Mono Debug|Win32.Build.0 = CT Mono Debug|Win32
+		{C776E91A-9147-4A24-BD66-5359FCA2293C}.CT Mono Release|Win32.ActiveCfg = CT Mono Release|Win32
+		{C776E91A-9147-4A24-BD66-5359FCA2293C}.CT Mono Release|Win32.Build.0 = CT Mono Release|Win32
+		{C776E91A-9147-4A24-BD66-5359FCA2293C}.CT Release|Win32.ActiveCfg = CT Release|Win32
+		{C776E91A-9147-4A24-BD66-5359FCA2293C}.CT Release|Win32.Build.0 = CT Release|Win32
+		{EA1CB6F8-4140-421D-A32B-379BAEE173B5}.CT Debug|Win32.ActiveCfg = CT Debug|Win32
+		{EA1CB6F8-4140-421D-A32B-379BAEE173B5}.CT Debug|Win32.Build.0 = CT Debug|Win32
+		{EA1CB6F8-4140-421D-A32B-379BAEE173B5}.CT Mono Debug|Win32.ActiveCfg = CT Mono Debug|Win32
+		{EA1CB6F8-4140-421D-A32B-379BAEE173B5}.CT Mono Debug|Win32.Build.0 = CT Mono Debug|Win32
+		{EA1CB6F8-4140-421D-A32B-379BAEE173B5}.CT Mono Release|Win32.ActiveCfg = CT Mono Release|Win32
+		{EA1CB6F8-4140-421D-A32B-379BAEE173B5}.CT Mono Release|Win32.Build.0 = CT Mono Release|Win32
+		{EA1CB6F8-4140-421D-A32B-379BAEE173B5}.CT Release|Win32.ActiveCfg = CT Release|Win32
+		{EA1CB6F8-4140-421D-A32B-379BAEE173B5}.CT Release|Win32.Build.0 = CT Release|Win32
+		{C146280C-E8E9-480E-BD31-7EF587CFBF49}.CT Debug|Win32.ActiveCfg = CT Debug|Win32
+		{C146280C-E8E9-480E-BD31-7EF587CFBF49}.CT Debug|Win32.Build.0 = CT Debug|Win32
+		{C146280C-E8E9-480E-BD31-7EF587CFBF49}.CT Mono Debug|Win32.ActiveCfg = CT Mono Debug|Win32
+		{C146280C-E8E9-480E-BD31-7EF587CFBF49}.CT Mono Debug|Win32.Build.0 = CT Mono Debug|Win32
+		{C146280C-E8E9-480E-BD31-7EF587CFBF49}.CT Mono Release|Win32.ActiveCfg = CT Mono Release|Win32
+		{C146280C-E8E9-480E-BD31-7EF587CFBF49}.CT Mono Release|Win32.Build.0 = CT Mono Release|Win32
+		{C146280C-E8E9-480E-BD31-7EF587CFBF49}.CT Release|Win32.ActiveCfg = CT Release|Win32
+		{C146280C-E8E9-480E-BD31-7EF587CFBF49}.CT Release|Win32.Build.0 = CT Release|Win32
+		{6C4E3F87-2903-4059-A7C6-0E935D1461F0}.CT Debug|Win32.ActiveCfg = CT Debug|Win32
+		{6C4E3F87-2903-4059-A7C6-0E935D1461F0}.CT Debug|Win32.Build.0 = CT Debug|Win32
+		{6C4E3F87-2903-4059-A7C6-0E935D1461F0}.CT Mono Debug|Win32.ActiveCfg = CT Mono Debug|Win32
+		{6C4E3F87-2903-4059-A7C6-0E935D1461F0}.CT Mono Debug|Win32.Build.0 = CT Mono Debug|Win32
+		{6C4E3F87-2903-4059-A7C6-0E935D1461F0}.CT Mono Release|Win32.ActiveCfg = CT Mono Release|Win32
+		{6C4E3F87-2903-4059-A7C6-0E935D1461F0}.CT Mono Release|Win32.Build.0 = CT Mono Release|Win32
+		{6C4E3F87-2903-4059-A7C6-0E935D1461F0}.CT Release|Win32.ActiveCfg = CT Release|Win32
+		{6C4E3F87-2903-4059-A7C6-0E935D1461F0}.CT Release|Win32.Build.0 = CT Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

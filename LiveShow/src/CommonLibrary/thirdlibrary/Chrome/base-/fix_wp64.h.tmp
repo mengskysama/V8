@@ -1,0 +1,76 @@
+// Copyright (c) 2006-2008 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+// Various inline functions and macros to fix compilation of 32 bit target
+// on MSVC with /Wp64 flag enabled.
+
+                         
+                         
+
+                    
+
+// Platform SDK fixes when building with /Wp64 for a 32 bits target.
+                                      
+
+                                 
+                                 
+                                                                             
+                                                                              
+                       
+                                                                              
+                                                                           
+                                               
+                                                              
+ 
+                                            
+
+                        
+                        
+                                                                          
+                                                                            
+                         
+                                                                              
+                                                                      
+ 
+                                   
+
+                        
+                        
+                                                                              
+                                                                      
+ 
+                                   
+
+                        
+                        
+                                                           
+                                         
+ 
+                                   
+
+                        
+                        
+                                                           
+                                         
+ 
+                                   
+
+                       
+                       
+                                                                             
+                                                                     
+ 
+                                  
+
+                       
+                       
+                                                                             
+                                                                     
+ 
+                                  
+
+        // #if !defined(_WIN64) && defined(_Wp64)
+
+        // BASE_FIX_WP64_H__
+

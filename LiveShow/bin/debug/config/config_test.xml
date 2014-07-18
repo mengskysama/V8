@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  
+  <server>
+    <token>
+			<ip_cnc>61.130.108.73</ip_cnc>
+			<ip_ctc></ip_ctc>
+			<port_179>18888</port_179>
+			<port_visitor>28888</port_visitor>
+    </token>
+    <hall>
+    	<ip_cnc>61.130.108.73</ip_cnc>
+			<ip_ctc></ip_ctc>
+      <port_hall>8006</port_hall>
+    </hall>
+  </server>
+  
+</config>

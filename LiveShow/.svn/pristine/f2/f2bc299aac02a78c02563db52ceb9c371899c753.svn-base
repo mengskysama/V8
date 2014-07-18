@@ -1,0 +1,89 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "FloatFR_aacPlusdec"=".\FloatFR_aacPlusdec_mpeg4.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name FloatFR_aacdeclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name FloatFR_sbrdeclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name FloatFRlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name FloatFR_bitbuflib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "FloatFR_aacdeclib"=".\FloatFR_aacdec\FloatFR_aacdeclib_mpeg4.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "FloatFR_bitbuflib"=".\FloatFR_bitbuflib\FloatFR_bitbuflib.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "FloatFR_sbrdeclib"=".\FloatFR_sbrdeclib\FloatFR_sbrdeclib_aac.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "FloatFRlib"=".\FloatFRlib\FloatFRlib.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>TA的粉丝</title>
+	<link rel="stylesheet" type="text/css" href="source/rest.css" />
+	<link rel="stylesheet" type="text/css" href="source/myfans.css" />
+</head>
+
+<body>
+<div class="container w430" style="padding-left:15px;">
+	<div class="tit">
+		<h2 class="icon-fans"><span></span>TA的粉丝</h2>
+		<b></b>
+	</div>
+	<div class="fbox">
+		<ul class="tabgroup">
+			<li id="tab1"><a class="on" onclick="switchTab('tab1','con1');">日榜</a></li>
+			<li id="tab2"><a onclick="switchTab('tab2','con2');">月榜</a></li>
+			<li id="tab3"><a onclick="switchTab('tab3','con3');">超级榜</a></li>
+		</ul>
+		<div class="tabcontent" id="con1">
+			<ul class="tab">
+				<li class="i1">排名</li>
+				<li class="i2">昵称</li>
+				<li class="i3">贡献值</li>
+			</ul>
+			<span id="dayFans">
+				<div class="go">亲，正在努力更新中...</div>
+			</span>
+		</div>
+		<div class="tabcontent" id="con2" style="display: none">
+			<ul class="tab">
+				<li class="i1">排名</li>
+				<li class="i2">昵称</li>
+				<li class="i3">贡献值</li>
+			</ul>
+			<span id="monthFans">
+				<div class="go">亲，正在努力更新中...</div>
+			</span>
+		</div>
+		<div class="tabcontent" id="con3" style="display: none">
+			<ul class="tab">
+				<li class="i1">排名</li>
+				<li class="i2">昵称</li>
+				<li class="i3">贡献值</li>
+			</ul>
+			<span id="superFans">
+				<div class="go">亲，正在努力更新中...</div>
+			</span>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="source/fansp.js"></script>
+</body>
+</html>

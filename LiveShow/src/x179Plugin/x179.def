@@ -1,0 +1,9 @@
+; x179.def : Declares the module parameters.
+
+LIBRARY      "x179Plugin.dll"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

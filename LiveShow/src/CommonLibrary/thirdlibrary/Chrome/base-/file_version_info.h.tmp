@@ -1,0 +1,89 @@
+// Copyright (c) 2006-2008 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+                                  
+                                  
+
+                 
+
+                            
+                            
+
+                
+               
+                
+     
+               
+      
+      
+
+// Provides a way to access the version information for a file.
+// This is the information you access when you select a file in the Windows
+// explorer, right-click select Properties, then click the Version tab.
+
+class FileVersionInfo {
+ public:
+  // Creates a FileVersionInfo for the specified path. Returns NULL if something
+  // goes wrong (typically the file does not exit or cannot be opened). The
+  // returned object should be deleted when you are done with it.
+  static FileVersionInfo* CreateFileVersionInfo(const std::wstring& file_path);
+
+  // Creates a FileVersionInfo for the current module. Returns NULL in case
+  // of error. The returned object should be deleted when you are done with it.
+  static FileVersionInfo* CreateFileVersionInfoForCurrentModule();
+
+  ~FileVersionInfo();
+
+  // Accessors to the different version properties.
+  // Returns an empty string if the property is not found.
+  std::wstring company_name();
+  std::wstring company_short_name();
+  std::wstring product_name();
+  std::wstring product_short_name();
+  std::wstring internal_name();
+  std::wstring product_version();
+  std::wstring private_build();
+  std::wstring special_build();
+  std::wstring comments();
+  std::wstring original_filename();
+  std::wstring file_description();
+  std::wstring file_version();
+  std::wstring legal_copyright();
+  std::wstring legal_trademarks();
+  std::wstring last_change();
+  bool is_official_build();
+
+  // Lets you access other properties not covered above.
+  bool GetValue(const wchar_t* name, std::wstring* value);
+
+  // Similar to GetValue but returns a wstring (empty string if the property
+  // does not exist).
+  std::wstring GetStringValue(const wchar_t* name);
+
+             
+                                                         
+                                                                  
+      
+
+ private:
+                   
+                                                           
+
+                                
+                
+                 
+                                                                   
+                                     
+                        
+                                             
+                                                          
+  
+                    
+      
+
+  DISALLOW_EVIL_CONSTRUCTORS(FileVersionInfo);
+};
+
+        // BASE_FILE_VERSION_INFO_H__
+

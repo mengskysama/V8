@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<flash>
+  <caishen type="4" file="caishen.swf" width="532" height="336" circle="40" time="21000" />
+  <lipao type="3" file="lipao.swf" width="0" height="0" circle="60" time="15000" />
+  <yanhua type="2" file="yanhua.swf" width="532" height="336" circle="60" time="18000" />
+  <lucky_500_1 type="6" file="500_1.swf" width="367" height="367" circle="60" time="6000" />
+  <lucky_500_2 type="7" file="500_2.swf" width="367" height="367" circle="60" time="6000" />
+  <lucky_1000_1 type="8" file="1000_1.swf" width="367" height="367" circle="60" time="6000" />
+  <lucky_1000_2 type="9" file="1000_2.swf" width="367" height="367" circle="60" time="6000" />
+  <lucky_5000_1 type="10" file="5000_1.swf" width="700" height="700" circle="60" time="7000" />
+  <lucky_5000_2 type="11" file="5000_2.swf" width="700" height="700" circle="60" time="7000" />
+  <luckystar type="12" file="luckystar.swf" width="700" height="700" circle="100" time="6000" />
+  <viptop type="14" file="viptop.swf" width="0" height="0" circle="100" time="8000" />
+  <coineffect type="15" file="coineffect.swf" width="130" height="50" circle="60" time="0" />
+  <guide type="16" file="guide.swf" width="0" height="0" circle="100" time="0" />
+  <christmas type="17" file="christmas.swf" width="0" height="0" circle="100" time="3500" />
+  <sofa type="18" file="sofa.swf" width="0" height="0" circle="100" time="0" />
+  <sofachat type="19" file="sofachat.swf" width="534" height="200" circle="100" time="0" />
+  <ordersong type="20" file="ordersong.swf" width="0" height="0" circle="100" time="3500" />
+</flash>

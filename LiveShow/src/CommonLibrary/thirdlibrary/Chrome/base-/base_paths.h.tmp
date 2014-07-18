@@ -1,0 +1,35 @@
+// Copyright (c) 2006-2008 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+                          
+                          
+
+// This file declares path keys for the base module.  These can be used with
+// the PathService to access various special directories and files.
+
+                            
+                   
+                                
+                        
+                                
+                       
+                                  
+      
+
+namespace base {
+
+enum {
+  PATH_START = 0,
+
+  DIR_CURRENT,  // current directory
+  DIR_EXE,      // directory containing FILE_EXE
+  DIR_MODULE,   // directory containing FILE_MODULE
+  DIR_TEMP,     // temporary directory
+  PATH_END
+};
+
+}  // namespace base
+
+        // BASE_BASE_PATHS_H_
+

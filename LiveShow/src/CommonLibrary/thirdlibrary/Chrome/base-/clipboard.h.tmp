@@ -1,0 +1,142 @@
+// Copyright (c) 2006-2008 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+                         
+                         
+
+                 
+                 
+
+                            
+                          
+                               
+
+                      
+                     
+                
+     
+               
+      
+      
+
+class Clipboard {
+ public:
+                   
+                                  
+                        
+                               
+     
+  typedef unsigned int FormatType;
+      
+
+  Clipboard();
+  ~Clipboard();
+
+  // Clears the clipboard.  It is usually a good idea to clear the clipboard
+  // before writing content to the clipboard.
+  void Clear();
+
+  // Adds UNICODE and ASCII text to the clipboard.
+  void WriteText(const std::wstring& text);
+
+  // Adds HTML to the clipboard.  The url parameter is optional, but especially
+  // useful if the HTML fragment contains relative links
+  void WriteHTML(const std::wstring& markup, const std::string& src_url);
+
+  // Adds a bookmark to the clipboard
+  void WriteBookmark(const std::wstring& title, const std::string& url);
+
+  // Adds both a bookmark and an HTML hyperlink to the clipboard.  It is a
+  // convenience wrapper around WriteBookmark and WriteHTML.
+  void WriteHyperlink(const std::wstring& title, const std::string& url);
+
+                   
+                                   
+                                                                               
+                                                                         
+                                                 
+                                                              
+
+                                   
+                                                                             
+                                              
+                                                 
+                                                              
+                                                          
+
+                                   
+                                                                            
+                                                          
+                                                                     
+
+                                                                        
+                            
+      
+
+  // Adds a file or group of files to the clipboard.
+  void WriteFile(const std::wstring& file);
+  void WriteFiles(const std::vector<std::wstring>& files);
+
+  // Tests whether the clipboard contains a certain format
+  bool IsFormatAvailable(FormatType format) const;
+
+  // Reads UNICODE text from the clipboard, if available.
+  void ReadText(std::wstring* result) const;
+
+  // Reads ASCII text from the clipboard, if available.
+  void ReadAsciiText(std::string* result) const;
+
+  // Reads HTML from the clipboard, if available.
+  void ReadHTML(std::wstring* markup, std::string* src_url) const;
+
+  // Reads a bookmark from the clipboard, if available.
+  void ReadBookmark(std::wstring* title, std::string* url) const;
+
+  // Reads a file or group of files from the clipboard, if available, into the
+  // out parameter.
+  void ReadFile(std::wstring* file) const;
+  void ReadFiles(std::vector<std::wstring>* files) const;
+  
+  // Get format Identifiers for various types.
+  static FormatType GetUrlFormatType();
+  static FormatType GetUrlWFormatType();
+  static FormatType GetMozUrlFormatType();
+  static FormatType GetPlainTextFormatType();
+  static FormatType GetPlainTextWFormatType();
+  static FormatType GetFilenameFormatType();
+  static FormatType GetFilenameWFormatType();
+  // Win: MS HTML Format, Other: Generic HTML format
+  static FormatType GetHtmlFormatType();
+                   
+                                          
+                      
+                                            
+                                           
+                                                  
+                                                   
+                                                    
+      
+
+ private:
+                   
+                                                                     
+                                                                     
+                                                                      
+
+                                                                        
+                                                            
+                                                             
+
+                                                                        
+                                                               
+                                                             
+
+                        
+      
+
+  DISALLOW_EVIL_CONSTRUCTORS(Clipboard);
+};
+
+        // BASE_CLIPBOARD_H_
+

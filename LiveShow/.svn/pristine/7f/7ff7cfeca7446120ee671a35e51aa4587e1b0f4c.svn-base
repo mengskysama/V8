@@ -1,0 +1,55 @@
+/*
+  Default Decoder Settings
+*/
+#ifndef _SBRDECSETTINGS_H
+#define _SBRDECSETTINGS_H
+
+#define SBR_UPSAMPLE_FAC        2
+
+
+#ifdef MAX_FRAME_SIZE
+#undef MAX_FRAME_SIZE
+#endif
+#define MAX_FRAME_SIZE       1024
+
+
+#define NO_ACTUAL_SYNTHESIS_CHANNELS  64
+#define QMF_FILTER_STATE_SYN_SIZE     640
+#define QMF_FILTER_STATE_ANA_SIZE     320
+#define NO_SYNTHESIS_CHANNELS         64
+#define NO_ANALYSIS_CHANNELS   (NO_SYNTHESIS_CHANNELS / SBR_UPSAMPLE_FAC)
+#define NO_POLY                (QMF_FILTER_STATE_SYN_SIZE / (2*NO_SYNTHESIS_CHANNELS))
+
+#define NO_SYNTHESIS_CHANNELS_DOWN_SAMPLED     32
+#define QMF_FILTER_STATE_SYN_SIZE_DOWN_SAMPLED 320
+
+
+#define MAX_NOISE_ENVELOPES      2
+#define MAX_NOISE_COEFFS         5
+#define MAX_NUM_NOISE_VALUES     (MAX_NOISE_ENVELOPES * MAX_NOISE_COEFFS)
+#define MAX_NUM_LIMITERS        12
+
+#ifdef MAX_ENVELOPES
+#undef MAX_ENVELOPES
+#endif
+#define MAX_ENVELOPES           5
+
+#define MAX_FREQ_COEFFS         48
+#define MAX_FREQ_COEFFS_FS44100 35
+#define MAX_FREQ_COEFFS_FS48000 32
+
+
+#define MAX_NUM_ENVELOPE_VALUES (MAX_ENVELOPES * MAX_FREQ_COEFFS)
+
+#define MAX_GAIN_EXP            34
+
+#define LPC_ORDER       2
+
+#define MAX_INVF_BANDS          MAX_NOISE_COEFFS
+
+#define MAX_COLS               (MAX_FRAME_SIZE / NO_ANALYSIS_CHANNELS)
+#define MAX_OV_COLS            6
+#define MAX_ENV_COLS           (MAX_COLS + MAX_OV_COLS)
+
+
+#endif

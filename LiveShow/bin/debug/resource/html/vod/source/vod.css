@@ -1,0 +1,162 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html{overflow:hidden;overflow-x:hidden;overflow-y:hidden;}
+.wrap{margin:auto;width:698px;background:#F9FDFF;font-family:微软雅黑,yahei;}
+	/*左侧主播列表*/
+	.wrap_left{width:86px;}
+		.zb_list li{margin-bottom:12px;height:116px;}
+		.zb_list li img{margin-left:5px;margin-top:5px;}
+		.zb_list li a{display:block;width:86px;background:url(zhubo_bg.gif) no-repeat;color:#8390A3;cursor:pointer}
+		.zb_list li a:hover{background:url(zhubo_bg.gif) no-repeat -86px 0;color:#0198FF;}
+		/*当前Hover*/
+		.zb_list li .on{position:relative;display:block;width:86px;background:url(zhubo_bg.gif) no-repeat;color:#0198FF;}
+		.zb_list li .on .bg{position:absolute;left:5px;top:-7px;width:76px;height:29px;background:url(zhubo_bg.gif) no-repeat -172px 0;}
+		.zb_list li .nickname{display:block;height:30px;line-height:30px;}
+
+	/*右侧内容块*/
+	.wrap_right{position:relative;width:555px;height:360px;border:1px solid #E2E1DF;}
+	.wrap_right .arr1,.wrap_right .arr2,.wrap_right .arr3{display:block;position:absolute;width:10px;height:74px;background:url(sprite_v1.gif) no-repeat -6px -69px;}
+	.wrap_right .arr1{left:-10px;top:0px;}
+	.wrap_right .arr2{left:-10px;top:128px;}
+	.wrap_right .arr3{left:-10px;top:256px;}
+
+		/*Status1 主播无歌曲*/
+		.textPrompt{margin:auto;padding-top:100px;width:200px;line-height:35px;}
+		.textPrompt a{color:#005DBA;text-decoration:underline;}
+
+		/*Status2 主播添加歌曲 & Status3 用户点歌*/
+		.addMusic{margin:auto;padding-top:65px;width:415px;}
+		.addMusic .title{line-height:30px;}
+		.addMusic .input{width:260px;height:27px;line-height:27px;border-left:1px solid #e3e3e3;border-right:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;border-top:1px solid #9d9d9d;padding-left:5px;padding-right:5px; vertical-align:middle;}
+		.addMusic .fcc{color:#CCC}.addMusic .fc3{color:#333}
+		.addMusic .btn{display:inline-block;width:72px;height:29px;line-height:29px;background:url(sprite_v1.gif) no-repeat -5px -5px;color:#fff}
+		.addMusic .btn:hover{background-position:-5px -37px}
+		.addMusic .promptText{height:30px;line-height:30px;color:#E50150;}
+
+		/*Status4 主播歌曲列表 & Status5 用户点播*/
+		.MusicList_height{height:258px;}
+		.MusicList{padding:3px 10px;}
+		.MusicList li{clear:both;height:32px;line-height:32px;}
+		.MusicList .bg{background:#ECF7FF;}
+		.MusicList .musicName_width{display:inline-block;width:370px;height:32px;line-height:32px;overflow:hidden;white-space:nowrap;}
+		.MusicList .musicName{position:relative}
+		.MusicList .hot{display:inline-block;width:32px;height:32px;background:url(sprite_v1.gif) no-repeat -150px -3px;}
+		.MusicList .dtop{color:#333}
+		.MusicList .dtop_no{color:#999}
+		.MusicList .icon_up,.MusicList .icon_up_no{display:inline-block;width:12px;height:12px;background:url(sprite_v1.gif) no-repeat;vertical-align:middle;margin:0 5px;_margin-top:3px;}
+		.MusicList .icon_up{background-position:-32px -76px}
+		.MusicList .icon_up_no{background-position:-152px -76px;}
+		.MusicList .icon_down,.MusicList .icon_down_no{display:inline-block;width:12px;height:12px;background:url(sprite_v1.gif) no-repeat;vertical-align:middle;margin:0 5px;_margin-top:3px;}
+		.MusicList .icon_down{background-position:-54px -76px;}
+		.MusicList .icon_down_no{background-position:-174px -76px;}
+		.MusicList .icon_del,.MusicList .icon_del_no{display:inline-block;width:11px;height:11px;background:url(sprite_v1.gif) no-repeat -97px -76px;vertical-align:middle;margin:0 5px;_margin-top:3px;}
+		.MusicList .icon_del:hover{background-position:-76px -76px}
+		.MusicList .icon_del_no{background-position:-97px -76px}
+
+		/*用户点播按钮*/
+		.MusicList .hill-seeding{display:inline-block;width:50px;height:22px;background:url(sprite_v1.gif) no-repeat -87px -7px;vertical-align:middle;margin-top:5px;}
+		.MusicList .hill-seeding:hover{background-position:-87px -37px}
+		/*用户插播按钮*/
+		.MusicList .hill-insert{display:inline-block;width:50px;height:22px;background:url(sprite_v1.gif) no-repeat -25px -140px;vertical-align:middle;margin-top:5px;}
+		.MusicList .hill-insert:hover{background-position:-84px -140px}
+
+	/*底部温馨提示*/
+	.footer{text-align:left;font-size:14px;color:#545454;text-indent:210px}
+	.footer .font1{color:#ff5400}
+
+/*统一使用*/
+	/*page List*/
+	.pageView{margin:auto;}
+	.pageList{clear:both;float:left;position:relative;left:50%}
+	.pageList li{float:left;display:inline;position:relative;left:-50%;width:26px;height:30px;line-height:30px;text-align:center;}
+	.pageList li .first,.pageList li .last{display:inline-block;width:26px;height:30px;background:url(sprite_v1.gif) no-repeat;}
+	.pageList li .first{background-position:-32px -95px;}
+	.pageList li .num{display:inline-block;width:26px;height:30px;line-height:30px;text-align:center;}
+	.pageList li .num:hover{background:#ff5500;color:#fff}
+	.pageList li .num-on{display:inline-block;width:26px;height:30px;line-height:30px;text-align:center;background:#ff5500;color:#fff}
+	.pageList li .last{background-position:-58px -95px;}
+
+	/*操作按钮1*/
+	.btn_save{display:inline-block;width:69px;height:30px;line-height:30px;background:#63A0D9;color:#Fff}
+	.btn_save_no{display:inline-block;width:69px;height:30px;line-height:30px;background:#eee;}
+	/*操作按钮2*/
+	.btn_clear{display:inline-block;width:69px;height:30px;line-height:30px;background:#eee;color:#4D4B4C}
+	.btn_clear:hover{background:#DAEDFE;}
+	.btn_clear_no{display:inline-block;width:69px;height:30px;line-height:30px;background:#eee;}
+
+	/*底部操作歌曲*/
+	.bottom_music{position:absolute;left:1px;bottom:1px;width:553px;height:58px;background:url(addmusic_bg.jpg) repeat-x;}
+	.bottom_music .input{width:320px;height:27px;line-height:27px;border-left:1px solid #e3e3e3;border-right:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;border-top:1px solid #9d9d9d;padding-left:5px;padding-right:5px; vertical-align:middle;}
+	.bottom_music .fcc{color:#CCC}.addMusic .fc3{color:#333}
+	.bottom_music .btn{display:inline-block;width:72px;height:29px;line-height:29px;background:url(sprite_v1.gif) no-repeat -5px -5px;color:#fff}
+	.bottom_music .btn:hover{background-position:-5px -37px}
+	.bottom_music .btn_no{display:inline-block;width:72px;height:29px;line-height:29px;background:#e1e1e1;color:#fff;padding-bottom:1px;}
+	
+		/*点歌按钮*/
+		.btn_music{display:inline-block;width:60px;height:29px;line-height:29px;background:url(sprite_v1.gif) no-repeat -175px -172px;color:#fff}
+		.btn_music:hover{background-position:-238px -172px}
+		/*插播按钮*/
+		.btn_chabo{display:inline-block;width:60px;height:29px;line-height:29px;background:url(sprite_v1.gif) no-repeat -175px -205px;color:#fff}
+		.btn_chabo:hover{background-position:-238px -205px}
+	
+
+	/*已点歌曲*/
+	.hill_music_text{color:#676767;height:30px;line-height:30px;}.hill_music_text .fontfb{color:#ff5500;}
+	.hill_MusicList{border:1px solid #E3E2E0;padding-top:10px;padding-bottom:20px;}
+	.hill_MusicList .MusicList_Item{height:300px;}
+	.hill_MusicList dl{clear:both;height:30px;}
+	.hill_MusicList dt{float:left;height:30px;line-height:30px;color:#333;font-weight:bold;}
+	.hill_MusicList dd{float:left;height:30px;line-height:30px;color:#333;}
+	/*有更多消息*/
+	.hill_MusicList dd.imm{position:relative;}
+	.hill_MusicList dd.imm .more_message{display:block;position:absolute;right:23px;top:5px;width:20px;height:18px;background:url(sprite_v1.gif) no-repeat -152px -37px;z-index:8;cursor:pointer;}
+	.hill_MusicList dd.imm .message_border{position:absolute;right:13px;top:16px;border:1px solid #86AB0E;background:#FAFFE8;padding:5px 8px;color:#666668;line-height:20px;text-align:left;}
+
+	.hill_MusicList .w85{width:85px;}
+	.hill_MusicList .timefont{color:#878787;}
+	.hill_MusicList .musictitle{width:128px;overflow:hidden;}
+	.hill_MusicList .w128{width:123px;overflow:hidden;margin-right:5px;}
+	.hill_MusicList .w199{width:199px;}
+	.hill_MusicList .w71{width:71px;}
+	/*2013-05-07 [[[*/
+	.hill_MusicList .w110{width:110px;}
+	.hill_MusicList .w181{width:181px;}	
+	.hill_MusicList .w65{width:65px;}
+	.hill_MusicList .evaluate_fc3{color:#E5724A}
+	.hill_MusicList .evaluate_fc2{color:#F1B52B}
+	.hill_MusicList .evaluate_fc1{color:#7BC8CB}
+
+	.hill_MusicList .w170{width:165px;overflow:hidden;margin-right:5px;}
+	.hill_MusicList .w270{width:270px;}
+	.evaluate_btn1,.evaluate_btn2,.evaluate_btn3{display:inline;width:50px;height:22px;background:url(sprite_v1.gif) no-repeat;text-indent:-999em;overflow:hidden;float:left;margin-top:4px;}
+	.evaluate_btn1{background-position:-10px -240px;margin-left:50px;}
+	.evaluate_btn1:hover{background-position:-10px -270px;}
+	.evaluate_btn2{background-position:-70px -240px;margin-left:10px;}
+	.evaluate_btn2:hover{background-position:-70px -270px;}
+	.evaluate_btn3{background-position:-130px -240px;margin-left:10px;}
+	.evaluate_btn3:hover{background-position:-130px -270px;}
+	
+	.comment_none{margin-left:auto;margin-right:auto;padding-top:100px;width:300px;font:bold 14px/26px yahei,微软雅黑;color:#454545;text-align:center}
+	.comment_none .go_btn{display:inline-block;width:50px;height:22px;background:url(sprite_v1.gif) no-repeat -87px -7px;vertical-align:middle;}
+	.comment_none .go_btn:hover{background-position:-87px -37px;}
+	/*]]] 2013-05-07*/
+	.hill_MusicList .btn_agree{color:#659A01;}
+	.hill_MusicList .btn_reject{color:#FF5300;}
+	.hill_MusicList .btn_yes{color:#90BA01;}
+	.hill_MusicList .bg{background:#ECF7FF}
+
+	.hill_MusicList .viewCont{padding-right:35px;}
+
+/*弹窗*/
+	/*背景遮罩*/
+	.popup_bg{background:#000;position:fixed;_position:absolute;width:100%;height:100%;top:0;left:0;opacity:0.2;filter:alpha(opacity=20);z-index:9998}
+	/*弹出层内容*/
+	.popup_frame{position:fixed;_position:absolute;top:50%;left:50%;z-index:9999;margin-left:-150px;margin-top:-100px;}
+	.popup_wrap{padding:0 10px;width:280px;height:200px;background:#fff;border:1px solid #AEAEAE;border-top:2px solid #00A0E8;}
+	.popup_title{height:35px;line-height:35px;}
+	.closeIcon{display:block;width:8px;height:8px;background:url(sprite_v1.gif) no-repeat -129px -77px;margin-top:12px;}
+
+	/*按钮*/
+	.popup_btn1,.popup_btn2{display:inline-block;width:70px;height:25px;line-height:25px;background:url(sprite_v1.gif) no-repeat;text-align:center;}
+	.popup_btn1{background-position:-200px -8px;color:#FFF;font-weight:bold;}
+	.popup_btn2{background-position:-200px -40px;color:#333;}

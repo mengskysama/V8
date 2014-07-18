@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<style>
+HTML,body
+{
+overflow-x:hidden;
+overflow-y:auto;
+}
+a{
+color:#0099FF;
+outline:none;
+hide-focus:expression(this.hideFocus=true);
+}
+div
+{
+margin-bottom:5px;
+}
+img
+{
+vertical-align:text-bottom;
+margin:1px;
+}
+.user{text-decoration:none;}
+.user:hover{text-decoration:underline;}
+
+iframe{border:0;}
+img{border:0;}
+
+.frb{position:fixed;bottom:0px;_bottom:auto;
+_position:absolute;right:5px;
+_top:expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight);
+}
+</style>
+
+<script>
+window.onerror=function()
+{
+return true;
+};
+function scroll2Bottom()
+{
+document.documentElement.scrollTop = document.body.scrollHeight;
+};
+</script>
+
+</head>
+
+<body scroll="auto"  bgcolor="#FFFFFF" style="overflow-x:hidden;overflow-y:auto;word-wrap:break-word;border-width:0;border-style:none">
+
+<div style="display:none" id="fortranslate"  ></div>
+
+<div id="display">
+</div>
+
+<div id="chargeHelper" class="frb">
+</div>
+
+</body>
+
+</html>

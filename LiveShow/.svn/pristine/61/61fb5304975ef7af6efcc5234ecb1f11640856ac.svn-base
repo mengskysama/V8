@@ -1,0 +1,33 @@
+﻿body{background:url(new_bg.jpg) center 0 no-repeat;}
+.container{margin:0 auto}
+.w430{width:560px;height:360px;padding:0 0 0 12px;position:relative; overflow-x:hidden; overflow-y:hidden;}
+.tit{float:left;width:100%;background: url(new_line.gif) no-repeat 100px center;}
+.tit h2{float:left;padding-left:19px;color:#135f8a;font-size:13px; font-family:arial, Geneva, sans-serif;}
+.tit h2.icon-fans{position:relative;background:url(icon-fans.png) no-repeat;_background:none;}
+.tit h2.icon-fans span{position:absolute;top:0px;left:0; display:none;_display:inline-block;width:16px;height:16px;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="source/icon-fans.png");}
+.tit b{ float:right;width:315px; height:3px; margin:7px 5px 0 0;}
+
+.fbox{width:531px;overflow:hidden;padding:0 3px;}
+.data{padding: 5px 0 0;background:url(boxbg.png) 36px -1px no-repeat;}
+
+.tabgroup{height:33px;margin-top:18px;_margin-top:12px;padding-left:22px;border-bottom:1px solid #E1F4FC;}
+.tabgroup ul{ }
+.tabgroup li{float:left;width:158px;margin-right: 11px;}
+.tabgroup a{cursor:pointer; text-align:center; color:#125F8B;font:bold 14px/26px arial;line-height:27px\9;line-height:27px\0;width:64px;height:30px; display:block; margin-right:25px;}
+.tabgroup a.on{color:#fff;background:url(tabbg.png) no-repeat;}
+.tabgroup a:hover{text-decoration:none;}
+
+.tabcontent{border-top:1px solid #CCE9F5;padding-top:4px; padding-left: 3px;}
+.tabcontent .go{clear:both;  text-align: center;padding:80px 80px;color:#727272;font-weight:bold;font-size:13px;}
+.tabcontent ul.tab{ }
+.tabcontent ul{overflow: hidden;height: 28px;}
+.tabcontent li{float:left;text-align:left;height:28px;line-height:28px; white-space:nowrap;}
+.tabcontent li.i1{width:102px;}
+.tabcontent li.i2{width:225px; text-align: center;padding-right:9px; margin-right: 25px;}
+.tabcontent li.i3{width:148px;}
+.tabcontent ul.list{clear:both;}
+.tabcontent ul.tab li{color:#178FCB;text-align:center;font-size:14px;font-weight:bold;}
+.tabcontent ul.tab li.i3{width:110px; text-align: left;}
+
+.tabcontent ul.list li{color:#666;font-size:13px;font-family:arial;}
+.tabcontent ul li.i1{margin-right:7px;}

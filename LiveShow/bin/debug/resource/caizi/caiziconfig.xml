@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <CaiZi>
+    <Index>1</Index>
+    <Name>赞</Name>
+    <Html>&lt;img src="images/zan1.gif"&gt;&lt;img src="images/zan1.gif"&gt;&lt;img src="images/zan2.gif"&gt;</Html>
+  </CaiZi>
+  <CaiZi>
+    <Index>2</Index>
+    <Name>亲一亲</Name>
+    <Html>&lt;img src="images/qinqin1.gif"&gt;&lt;img src="images/qinqin2.gif"&gt;&lt;img src="images/qinqin1.gif"&gt;</Html>
+  </CaiZi>
+  <CaiZi>
+    <Index>3</Index>
+    <Name>加油</Name>
+    <Html>&lt;img src="images/jiayou1.gif"&gt;&lt;img src="images/jiayou2.gif"&gt;&lt;img src="images/jiayou3.gif"&gt;&lt;img src="images/jiayou1.gif"&gt;</Html>
+  </CaiZi>
+  <CaiZi>
+    <Index>4</Index>
+    <Name>冒个泡泡</Name>
+    <Html>&lt;img src="images/maopao1.gif"&gt;&lt;img src="images/maopao2.gif"&gt;&lt;img src="images/maopao1.gif"&gt;&lt;img src="images/maopao2.gif"&gt;</Html>
+  </CaiZi>
+  <CaiZi>
+    <Index>5</Index>
+    <Name>好</Name>
+    <Html>&lt;img src="images/hao1.gif"&gt;&lt;img src="images/hao2.gif"&gt;&lt;img src="images/hao1.gif"&gt;&lt;img src="images/hao1.gif"&gt;&lt;img src="images/hao2.gif"&gt;&lt;img src="images/hao1.gif"&gt;</Html>
+  </CaiZi>
+  <CaiZi>
+    <Index>6</Index>
+    <Name>啪啪啪</Name>
+    <Html>&lt;img src="images/paipai1.gif"&gt;&lt;img src="images/paipai2.gif"&gt;</Html>
+  </CaiZi>
+  <CaiZi>
+    <Index>7</Index>
+    <Name>撒花</Name>
+    <Html>&lt;img src="images/sahua1.gif"&gt;&lt;img src="images/sahua2.gif"&gt;&lt;img src="images/sahua3.gif"&gt;&lt;img src="images/sahua2.gif"&gt;</Html>
+  </CaiZi>
+  <CaiZi>
+    <Index>8</Index>
+    <Name>牛</Name>
+    <Html>&lt;img src="images/niu1.gif"&gt;&lt;img src="images/niu1.gif"&gt;&lt;img src="images/niu2.gif"&gt;&lt;img src="images/niu1.gif"&gt;&lt;img src="images/niu3.gif"&gt;&lt;img src="images/niu2.gif"&gt;&lt;img src="images/niu1.gif"&gt;&lt;img src="images/niu4.gif"&gt;&lt;img src="images/niu2.gif"&gt;&lt;img src="images/niu5.gif"&gt;&lt;img src="images/niu1.gif"&gt;&lt;img src="images/niu1.gif"&gt;</Html>
+  </CaiZi>
+  <CaiZi>
+    <Index>9</Index>
+    <Name>抛媚眼</Name>
+    <Html>&lt;img src="images/paomeiyan1.gif"&gt;&lt;img src="images/paomeiyan2.gif"&gt;</Html>
+  </CaiZi>
+  <CaiZi>
+    <Index>10</Index>
+    <Name>再唱一首</Name>
+    <Html>&lt;img src="images/zai1.gif"&gt;&lt;img src="images/zai2.gif"&gt;&lt;img src="images/zai3.gif"&gt;</Html>
+  </CaiZi>
+</config>

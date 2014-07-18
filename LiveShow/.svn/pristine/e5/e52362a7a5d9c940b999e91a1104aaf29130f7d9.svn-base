@@ -1,0 +1,68 @@
+// Copyright (c) 2006-2008 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+// Define the necessary code and global data to look for kDebugOnStart command
+// line argument. When the command line argument is detected, it invokes the
+// debugger, if no system-wide debugger is registered, a debug break is done.
+
+                              
+                              
+
+                            
+
+// This only works on Windows.
+                   
+
+                          
+                                                 
+      
+
+                                     
+                    
+        
+                                                    
+                                                   
+                                     
+
+                                                                               
+                                             
+                            
+
+                                                                             
+                                              
+                                                                           
+  
+
+                                                                             
+                                                                          
+                                                                     
+                                                   
+                                                                         
+             
+
+                                                                                
+                                  
+       
+                                               
+                                               
+                                                            
+                        
+                        
+       
+
+                
+
+                                                                               
+                                      
+       
+                                               
+                                                                           
+                        
+       
+
+                 
+        // defined(OS_WIN)
+
+        // BASE_DEBUG_ON_START_H_
+

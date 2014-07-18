@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="liveshow_vsprops_debug"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;$(SolutionDir)\include&quot;;&quot;$(SolutionDir)\src\CommonLibrary\include&quot;;&quot;$(SolutionDir)\src\CommonLibrary\thirdlibrary\Chrome&quot;;&quot;$(SolutionDir)\src\CommonLibrary\thirdlibrary\boost_1_41_0&quot;;&quot;$(SolutionDir)\src\CommonLibrary\thirdlibrary\CxImage\include&quot;"
+		WarningLevel="4"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		OutputFile="$(SolutionDir)\bin\debug\$(ProjectName)d.dll"
+		AdditionalLibraryDirectories="$(SolutionDir)\lib\debug;$(SolutionDir)\lib\third_debug;"
+		GenerateDebugInformation="true"
+		ProgramDatabaseFile="$(SolutionDir)\pdb\debug\$(TargetName)d.pdb"
+		GenerateMapFile="true"
+		MapFileName="$(SolutionDir)\map\debug\$(TargetName)d.map"
+		ImportLibrary="$(SolutionDir)\lib\debug\$(ProjectName)d.lib"
+	/>
+</VisualStudioPropertySheet>

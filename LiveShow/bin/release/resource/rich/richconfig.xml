@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RichLevel>
+  <Level Index="0" Path="0富.gif" Tip="0富" />
+  <Level Index="1" Path="1富.gif" Tip="1富" />
+  <Level Index="2" Path="2富.gif" Tip="2富" />
+  <Level Index="3" Path="3富.gif" Tip="3富" />
+  <Level Index="4" Path="4富.gif" Tip="4富" />
+  <Level Index="5" Path="5富.gif" Tip="5富" />
+  <Level Index="6" Path="6富.gif" Tip="6富" />
+  <Level Index="7" Path="7富.gif" Tip="7富" />
+  <Level Index="8" Path="8富.gif" Tip="8富" />
+  <Level Index="9" Path="9富.gif" Tip="9富" />
+  <Level Index="10" Path="10富.gif" Tip="10富" />
+  <Level Index="11" Path="知府.gif" Tip="知府" />
+  <Level Index="12" Path="巡抚.gif" Tip="巡抚" />
+  <Level Index="13" Path="总督.gif" Tip="总督" />
+  <Level Index="14" Path="提督.gif" Tip="提督" />
+  <Level Index="15" Path="少傅.gif" Tip="少傅" />
+  <Level Index="16" Path="太傅.gif" Tip="太傅" />
+  <Level Index="17" Path="贝勒.gif" Tip="贝勒" />
+  <Level Index="18" Path="丞相.gif" Tip="丞相" />
+  <Level Index="19" Path="藩王.gif" Tip="藩王" />
+  <Level Index="20" Path="国公.gif" Tip="国公" />
+  <Level Index="21" Path="郡王.gif" Tip="郡王" />
+  <Level Index="22" Path="亲王.gif" Tip="亲王" />
+  <Level Index="23" Path="皇子.gif" Tip="皇子" />
+  <Level Index="24" Path="太子.gif" Tip="太子" />
+  <Level Index="25" Path="皇帝.gif" Tip="皇帝" />
+</RichLevel>

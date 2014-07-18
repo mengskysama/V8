@@ -1,0 +1,21 @@
+﻿body{background:transparent}
+.fbox{width:259px;height:260px;overflow:hidden;padding:0 3px; margin:0 auto; background:url(body.png) 0 1px no-repeat;}
+.tabgroup{width:304px; height:30px;overflow:hidden;clear:both;margin-top:59px;}
+.tabgroup li{float:left;}
+.tabgroup a{cursor:pointer; text-align:center; color:#ff436b;font:bold 14px/26px arial;line-height:27px\9;line-height:29px\9\0;width:64px;height:30px; display:block; margin-right:19px;}
+.tabgroup a.on{color:#fff;background:url(tabbg_pink.png) no-repeat;}
+.tabgroup a:hover{text-decoration:none;}
+.data{overflow:hidden; max-height: 133px;padding-top:7px; background:url(box.png) -3px -104px repeat;}
+.tabcontent{overflow:hidden;}
+.tabcontent .go{clear:both;padding:53px 0px; text-align:center; color:#727272;font-weight:bold;font-size:13px;}
+.tabcontent .go strong{color:#FF456D;}
+.tabcontent ul{overflow:hidden;}
+.tabcontent li{float:left;text-align:left;height:27px;}
+.tabcontent li.i1{width:59px;}
+.tabcontent li.i2{width:113px;padding-right:4px;text-align: center;}
+.tabcontent li.i3{width:72px;}
+.tabcontent ul.tab{overflow:hidden;height:19px;}
+.tabcontent ul.tab li{color:#ff6686;text-align:center;font-size:14px;font-weight:bold;}
+.tabcontent ul.tab li.i3{ text-align: left;}
+.tabcontent ul.list{height: 28px;    line-height: 26px;line-height: 27px\0;}
+.tabcontent ul.list li{color:#666;font-size:13px;font-family:arial;}

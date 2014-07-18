@@ -1,0 +1,27 @@
+HKCR
+{
+	x179.Plugin.1 = s 'x179PluginObj Class'
+	{
+		CLSID = s '{D7AA3061-C959-4D65-B029-DC6FA761FDDD}'
+	}
+	x179.Plugin = s 'x179PluginObj Class'
+	{
+		CLSID = s '{D7AA3061-C959-4D65-B029-DC6FA761FDDD}'
+		CurVer = s 'x179.Plugin.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D7AA3061-C959-4D65-B029-DC6FA761FDDD} = s 'x179PluginObj Class'
+		{
+			ProgID = s 'x179.Plugin.1'
+			VersionIndependentProgID = s 'x179.Plugin'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{C9ED99B6-2266-4B00-8690-9DA760840DDD}'
+		}
+	}
+}

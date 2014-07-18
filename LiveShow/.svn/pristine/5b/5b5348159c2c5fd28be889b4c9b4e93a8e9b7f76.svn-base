@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'x179.Plugin'
+		'x179Plugin.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

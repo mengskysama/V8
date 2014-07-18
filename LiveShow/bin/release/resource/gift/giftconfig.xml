@@ -1,0 +1,1667 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prop>
+	<!--幸运道具-->
+	<item id="0x1062" name="祈福雅安" type="normal" target="everyone_except_self" range="one" catalog="热门" unit="个" icon="1062.png" image="1062.gif" tempnotice="true" begin_time="2013-04-23 09:00:00" end_time="2013-04-27 00:00:00">
+		<desc content="该道具所有收入将捐赠给雅安人民"/>
+		<param>
+			<common price="30" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="0"/>
+		</param>
+	</item>
+    <item id="0x000c" name="幸运鼓掌" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="个" icon="1021.png" image="1021.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高500倍奖金"/>
+		<param>
+			<common price="60" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="15"/>
+		</param>
+	</item>
+	<item id="0x0010" name="幸运糖糖" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="个" icon="0010.png" image="0010.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高500倍奖金"/>
+		<param>
+			<common price="60" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="15"/>
+		</param>
+	</item>
+	<item id="0x0016" name="幸运乌龟" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="只" icon="1004.png" image="1004.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高1000倍奖金"/>
+		<param>
+			<common price="60" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="15"/>
+		</param>
+	</item>
+	<item id="0x0017" name="幸运亲亲" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="个" icon="1012.png" image="1012.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高500倍奖金"/>
+		<param>
+			<common price="60" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="15"/>
+		</param>
+	</item>
+	<item id="0x0018" name="幸运荧光" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="个" icon="1022.png" image="1022.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高500倍奖金"/>
+		<param>
+			<common price="30" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="7"/>
+		</param>
+	</item>
+	<item id="0x000a" name="幸运喉宝" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="个" icon="000a.png" image="000a.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高500倍奖金"/>
+		<param>
+			<common price="30" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="7"/>
+		</param>
+	</item>
+	<item id="0x0001" name="幸运玫瑰" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="枝" icon="0001.png" image="0001.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高1000倍奖金"/>
+		<param>
+			<common price="120" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="30"/>
+		</param>
+	</item>
+		<item id="0x0002" name="幸运啤酒" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="瓶" icon="0002.png" image="0002.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高1000倍奖金"/>
+		<param>
+			<common price="120" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="30"/>
+		</param>
+	</item>
+	<item id="0x0011" name="幸运奶牛" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="头" icon="0011.png" image="0011.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高5000倍奖金"/>
+		<param>
+			<common price="120" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="30"/>
+		</param>
+	</item>
+	<item id="0x0012" name="幸运天使" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="个" icon="0012.png" image="0012.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高1000倍奖金"/>
+		<param>
+			<common price="120" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="30"/>
+		</param>
+	</item>
+	<item id="0x0009" name="幸运树" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="棵" icon="0009.png" image="0009.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高5000倍奖金"/>
+		<param>
+			<common price="200" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="50"/>
+		</param>
+	</item>
+	<item id="0x0005" name="幸运宝盆" type="lucky" target="everyone_except_self" range="one" catalog="热门" unit="个" icon="0005.png" image="0005.gif" tempnotice="true">
+		<desc content="送出后有机会获赠最高5000倍奖金"/>
+		<param>
+			<common price="200" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="50"/>
+		</param>
+	</item>	
+	<!---->
+	<!--普通道具-->
+	<item id="0x1061" name="爱心" type="normal" target="everyone_except_self" range="one" catalog="爱情" unit="个" icon="000b.png" image="000b.gif">
+		<param>
+			<common price="60" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="27"/>
+		</param>
+	</item>	
+		<item id="0x1045" name="爱心便当" type="normal" target="everyone_except_self" range="one" catalog="爱情" unit="盒" icon="1045.png" image="1045.gif">
+		<param>
+			<common price="60" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="27"/>
+		</param>
+	</item>	
+		<item id="0x1047" name="抛媚眼" type="normal" target="everyone_except_self" range="one" catalog="爱情" unit="个" icon="1047.png" image="1047.gif">
+		<param>
+			<common price="60" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="27"/>
+		</param>
+	</item>		<item id="0x1014" name="打情骂俏" type="normal" target="everyone_except_self" range="one" catalog="爱情" unit="个" icon="1014.png" image="1014.gif">
+		<param>
+			<common price="60" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="27"/>
+		</param>
+	</item>	
+	<item id="0x1044" name="情书" type="normal" target="everyone_except_self" range="one" catalog="爱情" unit="封" icon="1044.png" image="1044.gif">
+		<param>
+			<common price="100" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="45"/>
+		</param>
+	  </item>
+	  <item id="0x1009" name="蓝色妖姬" type="normal" target="everyone_except_self" range="one" catalog="爱情" unit="枝" icon="1009.png" image="1009.gif">
+		<param>
+			<common price="100" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="45"/>
+		</param>
+	</item>
+	<item id="0x1016" name="抱抱熊" type="normal" target="everyone_except_self" range="one" catalog="爱情" unit="只" icon="1016.png" image="1016.gif" tempnotice="true" >	
+		<param>
+			<common price="100" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="45"/>
+		</param>
+	</item>
+	<item id="0x1010" name="比基尼" type="normal" target="everyone_except_self" range="one" catalog="爱情" unit="套" icon="1010.png" image="1010.gif">
+		<param>
+			<common price="100" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="45"/>
+		</param>
+	</item>
+	<item id="0x1011" name="水晶鞋" type="normal" target="everyone_except_self" range="one" catalog="爱情" unit="只" icon="1011.png" image="1011.gif">
+		<param>
+			<common price="100" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="45"/>
+		</param>
+	</item>
+	<item id="0x1015" name="耍帅" type="normal" target="everyone_except_self" range="one" catalog="爱情" unit="个" icon="1015.png" image="1015.gif">
+		<param>
+			<common price="100" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="45"/>
+		</param>
+	</item>
+	<item id="0x1005" name="钻戒" type="normal" target="everyone_except_self" range="one" catalog="爱情" unit="枚" icon="1005.png" image="1005.gif">
+		<desc content="爱的永恒见证"/>
+		<param>
+			<common price="500" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="225"/>
+		</param>
+	</item>
+	<item id="0x1050" name="喜糖" type="normal" target="everyone_except_self" range="all in room" catalog="爱情" unit="盒" icon="1050.png" image="1050.gif">
+		<desc content="赠与房间内所有用户"/>
+		<param>
+			<common price="100" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="45"/>
+		</param>
+	</item>			
+	<item id="0x1019" name="热烈欢迎" type="normal" target="everyone_except_self" range="one" catalog="友谊" unit="个" icon="1019.png" image="1019.gif">
+		<param>
+			<common price="20" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="9"/>
+		</param>
+	</item>
+	<item id="0x1020" name="你真棒" type="normal" target="everyone_except_self" range="one" catalog="友谊" unit="个" icon="1020.png" image="1020.gif">
+		<param>
+			<common price="20" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="9"/>
+		</param>
+	</item>		
+	<item id="0x1023" name="谢谢你" type="normal" target="everyone_except_self" range="one" catalog="友谊" unit="个" icon="1023.png" image="1023.gif">
+		<param>
+			<common price="20" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="9"/>
+		</param>
+	</item>
+	<item id="0x1060" name="鞭炮" type="normal" target="everyone_except_self" range="one" catalog="友谊" unit="个" icon="0015.png" image="0015.gif">
+		<param>
+			<common price="20" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="9"/>
+		</param>
+	</item>
+	<item id="0x1048" name="礼盒" type="normal" target="everyone_except_self" range="one" catalog="友谊" unit="个" icon="1048.png" image="1048.gif">
+		<param>
+			<common price="60" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="27"/>
+		</param>
+	</item>
+	<item id="0x1026" name="好运滚滚" type="normal" target="everyone_except_self" range="one" catalog="友谊" unit="个" icon="1026.png" image="1026.gif">
+		<param>
+			<common price="60" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="27"/>
+		</param>
+	</item>
+	<item id="0x1027" name="开业大吉" type="normal" target="everyone_except_self" range="one" catalog="友谊" unit="个" icon="1027.png" image="1027.gif">
+		<param>
+			<common price="500" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="225"/>
+		</param>
+	</item>	
+	<item id="0x1058" name="好声音" richname="白兔好声音" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="个" icon="1058.png" image="1058.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="含情脉脉地送给"/>
+		<param>
+			<common price="100000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="75000"/>
+		</param>
+	</item>
+	<item id="0x1028" name="做我女友" richname="做我女朋友吧" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="个" icon="1028.png" image="1028.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="含情脉脉地送给"/>
+		<param>
+			<common price="200000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="150000"/>
+		</param>
+	</item>
+	<item id="0x1029" name="做我男友" richname="做我男朋友吧" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="个" icon="1029.png" image="1029.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="含情脉脉地送给"/>
+		<param>
+			<common price="100000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="75000"/>
+		</param>
+	</item>
+	<item id="0x1030" name="私奔吧" richname="我们私奔吧" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="个" icon="1030.png" image="1030.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="含情脉脉地送给"/>
+		<param>
+			<common price="200000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="150000"/>
+		</param>
+	</item>
+	<item id="0x1031" name="结婚吧" richname="我们结婚吧" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="个" icon="1031.png" image="1031.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="含情脉脉地送给"/>
+		<param>
+			<common price="250000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="187500"/>
+		</param>
+	</item>
+	<item id="0x1032" name="分手吧" richname="我们分手吧" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="个" icon="1032.png" image="1032.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="无限伤感地送给"/>
+		<param>
+			<common price="100000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="75000"/>
+		</param>
+	</item>
+	<item id="0x1033" name="我错了" richname="对不起我错了" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="个" icon="1033.png" image="1033.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="万分懊悔地送给"/>
+		<param>
+			<common price="150000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="112500"/>
+		</param>
+	</item>
+	<item id="0x1034" name="环游世界" richname="环游世界" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="个" icon="1034.png" image="1034.gif">
+		<desc content="跑道区浮动展示，还可以附加赠言哦"/>
+		<senddesc content="非常豪爽地送给"/>
+		<giftwords content="让我们环游世界，做一对神仙眷侣"/>
+		<param>
+			<common price="888888" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="666666"/>
+		</param>
+	</item>
+	<item id="0x1035" name="爱你万年" richname="爱你一万年" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="个" icon="1035.png" image="1035.gif">
+		<desc content="跑道区浮动展示，还可以附加赠言哦"/>
+		<senddesc content="深情款款地送给"/>
+		<giftwords content="让我们长相厮守，永浴爱河吧！"/>
+		<param>
+			<common price="520520" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="390390"/>
+		</param>
+    </item>
+	<item id="0x1036" name="豪华跑车" richname="豪华跑车" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="辆" icon="1036.png" image="1036.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="非常豪爽地送给"/>
+		<param>
+			<common price="250000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="187500"/>
+		</param>
+	</item>
+	<item id="0x1037" name="豪华别墅" richname="豪华别墅" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="栋" icon="1037.png" image="1037.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="非常豪爽地送给"/>
+		<param>
+			<common price="250000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="187500"/>
+		</param>
+	</item>
+	<item id="0x1038" name="豪华飞机" richname="豪华飞机" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="架" icon="1038.png" image="1038.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="非常豪爽地送给"/>
+		<param>
+			<common price="300000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="225000"/>
+		</param>
+	</item>
+	<item id="0x1039" name="豪华游艇" richname="豪华游艇" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="艘" icon="1039.png" image="1039.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="非常豪爽地送给"/>
+		<param>
+			<common price="300000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="225000"/>
+		</param>
+	</item>
+	<item id="0x1040" name="秘密花园" richname="秘密花园" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="座" icon="1040.png" image="1040.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="非常豪爽地送给"/>
+		<param>
+			<common price="150000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="112500"/>
+		</param>
+	</item>
+	<item id="0x1041" name="岛屿" richname="岛屿" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="座" icon="1041.png" image="1041.gif">
+		<desc content="跑道区浮动展示，赠送数量越多停留时间越长"/>
+		<senddesc content="非常豪爽地送给"/>
+		<param>
+			<common price="300000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="225000"/>
+		</param>
+	</item>
+	<item id="0x1042" name="生日快乐" richname="祝你生日快乐" type="luxury" target="everyone_except_self" range="one" catalog="奢侈" unit="个" icon="1042.png" image="1042.gif">
+		<desc content="跑道区浮动展示，还可以附加赠言哦"/>
+		<senddesc content="一脸真诚地送给"/>
+		<giftwords content="生日快乐，快来许个愿吧！"/>
+		<param>
+			<common price="500000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="300000"/>
+		</param>
+	</item>
+	<!---->
+		<!--印章-->
+	<item id="0x2001" name="老婆" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2001s.png" image="2001.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2002" name="老公" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2002s.png" image="2002.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2003" name="娘子" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2003s.png" image="2003.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2004" name="相公" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2004s.png" image="2004.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2005" name="城管" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2005s.png" image="2005.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2006" name="干女儿" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2006s.png" image="2006.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+		</item>
+	<item id="0x2007" name="干爹" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2007s.png" image="2007.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2008" name="女王" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2008s.png" image="2008.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2009" name="大叔" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2009s.png" image="2009.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2010" name="御姐" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2010s.png" image="2010.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2011" name="师太" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2011s.png" image="2011.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2012" name="太监" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2012s.png" image="2012.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2013" name="财主" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2013s.png" image="2013.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+		</item>
+	<item id="0x2014" name="小妾" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2014s.png" image="2014.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2015" name="少爷" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2015s.png" image="2015.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2016" name="西施" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2016s.png" image="2016.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2017" name="貂蝉" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2017s.png" image="2017.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2018" name="玉环" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2018s.png" image="2018.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2019" name="昭君" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2019s.png" image="2019.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2020" name="DJ" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2020s.png" image="2020.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2021" name="小秘" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2021s.png" image="2021.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2022" name="老板" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2022s.png" image="2022.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2023" name="格格" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2023s.png" image="2023.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2024" name="阿哥" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2024s.png" image="2024.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2025" name="领导" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2025s.png" image="2025.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="角色"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+    </item>
+	<item id="0x2026" name="白富美" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2026s.png" image="2026.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2027" name="高富帅" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2027s.png" image="2027.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2028" name="美女" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2028s.png" image="2028.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2029" name="帅哥" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2029s.png" image="2029.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2030" name="给力" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2030s.png" image="2030.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2031" name="女神" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2031s.png" image="2031.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2032" name="情圣" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2032s.png" image="2032.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2033" name="天使" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2033s.png" image="2033.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2034" name="型男" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2034s.png" image="2034.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2035" name="牛人" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2035s.png" image="2035.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2036" name="赌神" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2036s.png" image="2036.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+
+	</item>
+	<item id="0x2037" name="富婆" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2037s.png" image="2037.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2038" name="萝莉" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2038s.png" image="2038.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2039" name="爷们" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2039s.png" image="2039.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2040" name="辣妹" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2040s.png" image="2040.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2041" name="才女" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2041s.png" image="2041.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2042" name="人才" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2042s.png" image="2042.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2043" name="性感" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2043s.png" image="2043.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2044" name="绅士" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2044s.png" image="2044.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2045" name="可爱" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2045s.png" image="2045.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2046" name="清纯" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2046s.png" image="2046.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2047" name="妩媚" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2047s.png" image="2047.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2048" name="宝贝" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2048s.png" image="2048.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2049" name="俏妞" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2049s.png" image="2049.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2050" name="迷人" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2050s.png" image="2050.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="称赞"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+    </item>
+	<item id="0x2051" name="处女" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2051s.png" image="2051.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2052" name="处男" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2052s.png" image="2052.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2053" name="赔钱货" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2053s.png" image="2053.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2054" name="求包养" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2054s.png" image="2054.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2055" name="拍卖" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2055s.png" image="2055.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+		</item>
+	<item id="0x2056" name="潘金莲" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2056s.png" image="2056.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="500" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2217" name="小怪兽" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2217s.png" image="2217.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2058" name="西门庆" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2058s.png" image="2058.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2059" name="陈世美" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2059s.png" image="2059.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+    </item>
+	<item id="0x2060" name="蛋疼" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2060s.png" image="2060.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2061" name="发春" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2061s.png" image="2061.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2062" name="老湿" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2062s.png" image="2062.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2063" name="肾亏" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2063s.png" image="2063.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2064" name="土鳖" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2064s.png" image="2064.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2065" name="裸奔" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2065s.png" image="2065.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+    </item>
+	<item id="0x2066" name="色狼" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2066s.png" image="2066.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2067" name="下流" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2067s.png" image="2067.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2068" name="变态" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2068s.png" image="2068.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2069" name="猥琐" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2069s.png" image="2069.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2070" name="土匪" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2070s.png" image="2070.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2216" name="猪婆" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2216s.png" image="2216.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2072" name="肥婆" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2072s.png" image="2072.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+    </item>
+	<item id="0x2073" name="二奶" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2073s.png" image="2073.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+    </item>
+	<item id="0x2074" name="秃驴" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2074s.png" image="2074.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	 </item>
+	<item id="0x2075" name="欠抽" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2075s.png" image="2075.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="整蛊"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2076" name="重口味" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2076s.png" image="2076.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2077" name="屌丝" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2077s.png" image="2077.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2078" name="富二代" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2078s.png" image="2078.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2079" name="暴发户" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2079s.png" image="2079.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2080" name="神经病" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2080s.png" image="2080.png">
+		<desc content="价格1000币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="1000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2081" name="妹纸" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2081s.png" image="2081.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2082" name="骚年" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2082s.png" image="2082.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2083" name="凹凸曼" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2083s.png" image="2083.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2084" name="卖萌" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2084s.png" image="2084.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2085" name="吃货" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2085s.png" image="2085.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2086" name="潮人" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2086s.png" image="2086.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2087" name="惹火" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2087s.png" image="2087.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2088" name="妖精" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2088s.png" image="2088.png">
+		<desc content="价格2000币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="2000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2089" name="如花" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2089s.png" image="2089.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2090" name="玉女" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2090s.png" image="2090.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2091" name="花痴" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2091s.png" image="2091.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2092" name="花心" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2092s.png" image="2092.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2093" name="自恋" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2093s.png" image="2093.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2094" name="白痴" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2094s.png" image="2094.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2095" name="脑残" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2095s.png" image="2095.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2218" name="抠门" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2218s.png" image="2218.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2219" name="骗子" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2219s.png" image="2219.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2098" name="流氓" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2098s.png" image="2098.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2099" name="破产" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2099s.png" image="2099.png">
+		<desc content="价格600币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="600" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2100" name="奴隶" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2100s.png" image="2100.png">
+		<desc content="价格300币，时效：10分钟"/>
+		<label name="印象"/>
+		<param>
+			<common price="300" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2101" name="歌神" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2101s.png" image="2101.png">
+		<desc content="价格6000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="6000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2102" name="麦霸" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2102s.png" image="2102.png">
+		<desc content="价格6000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="6000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2103" name="舞后" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2103s.png" image="2103.png">
+		<desc content="价格6000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="6000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2104" name="名嘴" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2104s.png" image="2104.png">
+		<desc content="价格6000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="6000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2105" name="万人迷" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2105s.png" image="2105s.png">
+		<desc content="价格6000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="6000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2106" name="心肝儿" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2106s.png" image="2106s.png">
+		<desc content="价格6000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="6000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2107" name="菊花" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2107s.png" image="2107.png">
+		<desc content="价格6000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="6000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2108" name="V5" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2108s.png" image="2108.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2109" name="牛X" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2109s.png" image="2109.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2110" name="囧" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2110s.png" image="2110.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2111" name="欲女" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2111s.png" image="2111.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2112" name="猛男" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2112s.png" image="2112.png">
+		<desc content="价格6000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="6000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2113" name="尤物" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2113s.png" image="2113.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2114" name="风流" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2114s.png" image="2114.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2115" name="波霸" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2115s.png" image="2115.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2116" name="撩人" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2116s.png" image="2116.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2117" name="销魂" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2117s.png" image="2117.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2118" name="挺拔" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2118s.png" image="2118.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2119" name="传说" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2119s.png" image="2119.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2120" name="嚣张" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2120s.png" image="2120.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2121" name="寿星" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2121s.png" image="2121.png">
+		<desc content="价格6000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="6000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2122" name="红人" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2122s.png" image="2122.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2123" name="极品" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2123s.png" image="2123.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2124" name="惊艳" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2124s.png" image="2124.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x2125" name="巨星" type="stamp" target="everyone_except_self" range="one" catalog="印章" unit="个" icon="2125s.png" image="2125.png">
+		<desc content="价格5000币，时效：10分钟"/>
+		<label name="贵族"/>
+		<param>
+			<common price="5000" use_means="time" quantity="600"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<!--变声卡-->
+		<item id="0x4001" name="知了" type="change voice" target="everyone_except_self" range="one" catalog="变声卡" unit="个" icon="知了.png" image="知了2.png">
+		<desc content="价格5000币，时效：5分钟"/>
+		<voice>
+			<words content="知了~~~知了~~~池塘边的榕树上，知了在声声地叫着夏天，白兔KTV的房间里，大家在热热闹闹聊着天。"/>
+			<words content="知了~~~知了~~~白兔KTV哪个美女最好？"/>
+			<words content="知了~~~知了~~~我身材小，嗓门高，天气越热我越吵。"/>
+			<words content="知了~~~知了~~~“我可是歌手哦！”“歌手？你以前不就是一个挖地道的么？”“我……”"/>
+			<words content="知了~~~知了~~~别人说我很骄傲，还没学会就知了，知了知了知道了~"/>
+			<words content="知了~~~知了~~~最讨厌那些把我当成苍蝇的人了，没见识就算了，还那么没品位"/>
+		</voice>
+		<param>
+			<common price="5000" use_means="time" quantity="300"/>
+			<viplevel min="normal" max="king"/>
+			<target_except identity="operator" desc="线上运营"/>
+			<target_except identity="agent" desc="官方代理"/>
+			<target_except identity="patrolman" desc="巡管"/>
+		</param>
+		</item>
+		<item id="0x4002" name="小鸡" type="change voice" target="everyone_except_self" range="one" catalog="变声卡" unit="个" icon="小鸡.png" image="小鸡2.png">
+		<desc content="价格5000币，时效：5分钟"/>
+		<voice>
+			<words content="叽叽叽叽～小兔兔、小猫猫、你们的小名都好听，可是我的小名……"/>
+			<words content="叽叽叽叽～如果哪天我飞起来，那就是飞鸡了！"/>
+			<words content="叽叽叽叽～太让人生气了！人天天说要计划生育，还成天让我多生蛋。"/>
+			<words content="叽叽叽叽～当我还是一只鸡蛋的时候去茶馆喝茶，结果变成了茶叶蛋。"/>
+			<words content="叽叽叽叽～你们不要再问我是先有鸡还是先有蛋啦，那么久远的事情我都不记得了。"/>
+		</voice>
+		<param>
+			<common price="5000" use_means="time" quantity="300"/>
+			<viplevel min="normal" max="king"/>
+			<target_except identity="operator" desc="线上运营"/>
+			<target_except identity="agent" desc="官方代理"/>
+			<target_except identity="patrolman" desc="巡管"/>
+		</param>
+		</item>
+		<item id="0x4003" name="小鸭" type="change voice" target="everyone_except_self" range="one" catalog="变声卡" unit="个" icon="小鸭.png" image="小鸭2.png">
+		<desc content="价格5000币，时效：5分钟"/>
+		<voice>
+			<words content="嘎～～我是一只小鸭子，咿呀咿呀哟！"/>
+			<words content="嘎～～门前大桥下，游来一群鸭，快来快来数一数，二四六七八！"/>
+			<words content="嘎～～我表示鸭梨山大呀！！！"/>
+			<words content="嘎～～丑小鸭变天鹅的故事告诉我们，鸭妈妈背着它丈夫搞外遇了。"/>
+			<words content="嘎～～当我还是一个蛋的时候去海边游泳，结果回来就变成了咸鸭蛋。"/>
+			<words content="嘎～～最讨厌跟螃蟹比猜拳了，我老是出布，它老是出剪刀。"/>
+		</voice>
+		<param>
+			<common price="5000" use_means="time" quantity="300"/>
+			<viplevel min="normal" max="king"/>
+			<target_except identity="operator" desc="线上运营"/>
+			<target_except identity="agent" desc="官方代理"/>
+			<target_except identity="patrolman" desc="巡管"/>
+		</param>
+		</item>
+		<item id="0x4004" name="青蛙" type="change voice" target="everyone_except_self" range="one" catalog="变声卡" unit="个" icon="青蛙.png" image="青蛙2.png">
+		<desc content="价格5000币，时效：5分钟"/>
+		<voice>
+			<words content="呱呱….我不吃你的呱……呱……呱子。"/>
+			<words content="呱呱….我们青蛙很辛苦，夏天就打丛林战，冬天就打地道战。"/>
+			<words content="呱呱….要想生活过得去，就得身上披点绿。"/>
+			<words content="呱呱….我小时候没手没脚，所以不会动手动脚。"/>
+			<words content="呱呱….我的大名是青蛙，小名叫田鸡。"/>
+			<words content="呱呱….癞蛤蟆是革新派，想吃天鹅肉，青蛙是保守派，坐井观天。"/>
+		</voice>
+		<param>
+			<common price="5000" use_means="time" quantity="300"/>
+			<viplevel min="normal" max="king"/>
+			<target_except identity="operator" desc="线上运营"/>
+			<target_except identity="agent" desc="官方代理"/>
+			<target_except identity="patrolman" desc="巡管"/>
+		</param>
+		</item>
+		<item id="0x4005" name="小羊" type="change voice" target="everyone_except_self" range="one" catalog="变声卡" unit="个" icon="小羊.png" image="小羊2.png">
+		<desc content="价格5000币，时效：5分钟"/>
+		<voice>
+			<words content="咩～～～当我停止呼吸的时候，才是真的“羊没”吐气。"/>
+			<words content="咩～～～睡不着就数羊，当我数到五千六百四十八只的时候，刚好天亮…"/>
+			<words content="咩～～～羊爱上狼，爱得疯狂，谁让我们真爱了一场。"/>
+			<words content="咩～～～地球的四大洋分别是喜羊羊、美羊羊、懒羊羊和沸羊羊！"/>
+			<words content="咩～～～我恨狼，又不敢吃狼肉，于是我改吃屎壳郎。"/>
+			<words content="咩～～～野狼大叔，难道你就忍心吃掉我这么可爱的小羊吗？"/>
+		</voice>
+		<param>
+			<common price="5000" use_means="time" quantity="300"/>
+			<viplevel min="normal" max="king"/>
+			<target_except identity="operator" desc="线上运营"/>
+			<target_except identity="agent" desc="官方代理"/>
+			<target_except identity="patrolman" desc="巡管"/>
+		</param>
+		</item>
+		<item id="0x4006" name="小猫" type="change voice" target="everyone_except_self" range="one" catalog="变声卡" unit="个" icon="小猫.png" image="小猫2.png">
+		<desc content="价格5000币，时效：5分钟"/>
+		<voice>
+			<words content="喵～老虎不发威，你当我是病猫！"/>
+			<words content="喵～身为一只富有的猫，其象征就是拥有数不清的老鼠。"/>
+			<words content="喵～猫和狗相处的后果，就是狗严重受伤！"/>
+			<words content="喵～你以为一天睡18回觉是件容易的事吗？！"/>
+			<words content="喵～这条秋刀鱼的味道不错，但不如前八条好！"/>
+			<words content="喵～有一天，我趁着老鹰午睡爬上了树，然后就有了猫头鹰。"/>
+		</voice>
+		<param>
+			<common price="5000" use_means="time" quantity="300"/>
+			<viplevel min="normal" max="king"/>
+			<target_except identity="operator" desc="线上运营"/>
+			<target_except identity="agent" desc="官方代理"/>
+			<target_except identity="patrolman" desc="巡管"/>
+		</param>
+		</item>
+		<item id="0x4007" name="老鼠" type="change voice" target="everyone_except_self" range="one" catalog="变声卡" unit="个" icon="老鼠.png" image="老鼠2.png">
+		<desc content="价格5000币，时效：5分钟"/>
+		<voice>
+			<words content="吱吱吱～猫呢？刚才那只猫呢？看我不剁了它！"/>
+			<words content="吱吱吱～虽说我个头小，大象见我都要跑。"/>
+			<words content="吱吱吱～我的存在是为猫提供就业机会，为狗提供兼职机会。"/>
+			<words content="吱吱吱～我每天拿鼠药当糖吃，拿鼠夹练臂力。时间不早了，回家抱猫去咯！"/>
+			<words content="吱吱吱～爷已吃老鼠药，你们别想吃爷了，爷他妈也不是好惹的！"/>
+			<words content="吱吱吱～“紧吗？”“不紧！”“可以再进去一点吗？”“小心一点，应该可以！”“痛吗？”“不痛！感觉真爽！“”那我们继续挖洞打造自己的家吧。”"/>
+		</voice>
+		<param>
+			<common price="5000" use_means="time" quantity="300"/>
+			<viplevel min="normal" max="king"/>
+			<target_except identity="operator" desc="线上运营"/>
+			<target_except identity="agent" desc="官方代理"/>
+			<target_except identity="patrolman" desc="巡管"/>
+		</param>
+		</item>
+		<item id="0x4008" name="小猪" type="change voice" target="everyone_except_self" range="one" catalog="变声卡" unit="个" icon="小猪.png" image="小猪2.png">
+		<desc content="价格5000币，时效：5分钟"/>
+		<voice>
+			<words content="哼哼哼～～～对不起，您找的是外地大懒猪，请在号码前加拨猪圈区号！"/>
+			<words content="哼哼哼～～～小猪小猪了不起，每天睡到十点起，顿顿五碗都见底，体重没有谁敢比。"/>
+			<words content="哼哼哼～～～猪撞树上了，你撞猪上了吧？"/>
+			<words content="哼哼哼～～～我在江湖上也有了响当当的名号：知猪狭。"/>
+			<words content="哼哼哼～～～我的梦想是天下栏栅都倒掉，天上纷纷掉饲料，全球屠夫往河跳，世界人民信回教。"/>
+		</voice>
+		<param>
+			<common price="5000" use_means="time" quantity="300"/>
+			<viplevel min="normal" max="king"/>
+			<target_except identity="operator" desc="线上运营"/>
+			<target_except identity="agent" desc="官方代理"/>
+			<target_except identity="patrolman" desc="巡管"/>
+		</param>
+		</item>
+		<item id="0x4009" name="小狗" type="change voice" target="everyone_except_self" range="one" catalog="变声卡" unit="个" icon="小狗.png" image="小狗2.png">
+		<desc content="价格5000币，时效：5分钟"/>
+		<voice>
+			<words content="汪！～今天主人不在家，让我来看家。"/>
+			<words content="汪！～我很聪明，所以狗头军师的招牌多年不倒。"/>
+			<words content="汪！～我最讨厌的一句话就是：狗改不了吃屎。"/>
+			<words content="汪！～前阵子，考古学家在主人的花园里发现的大量骨头，其实只是我的私房钱，555~"/>
+			<words content="汪！～我这么乖，快赏我一块骨头吧！"/>
+			<words content="汪！～我昨晚梦到你了，我们漫步在小河边，相互依偎着。你抬头凝视着我的眼睛，深情地吐出三个字……汪汪汪"/>
+		</voice>
+		<param>
+			<common price="5000" use_means="time" quantity="300"/>
+			<viplevel min="normal" max="king"/>
+			<target_except identity="operator" desc="线上运营"/>
+			<target_except identity="agent" desc="官方代理"/>
+			<target_except identity="patrolman" desc="巡管"/>
+		</param>
+		</item>
+		<item id="0x4010" name="苍蝇" type="change voice" target="everyone_except_self" range="one" catalog="变声卡" unit="个" icon="苍蝇.png" image="苍蝇2.png">
+		<desc content="价格5000币，时效：5分钟"/>
+		<voice>
+			<words content="嗡嗡嗡～～～妈妈，为什么别人总说我们是吃屎长大的。"/>
+			<words content="嗡嗡嗡～～～人类就像玻璃瓶里的无头苍蝇，前途光明却找不到出路。"/>
+			<words content="嗡嗡嗡～～～该用户已掉进粪坑，请稍候再拨……"/>
+			<words content="嗡嗡嗡～～～送你一份有屎以来，粪量最重的礼物，你一定会大吃一斤，还要多多饱含，如觉粪量不够还请自便！"/>
+			<words content="嗡嗡嗡～～～老鼠呀，你们吃香的喝辣的顶个屁用，光着PP的女孩你见过几个？"/>
+			<words content="嗡嗡嗡～～～一个牛逼的人，既可以给珠穆朗玛装电梯，也可以给苍蝇割双眼皮。"/>
+		</voice>
+		<param>
+			<common price="5000" use_means="time" quantity="300"/>
+			<viplevel min="normal" max="king"/>
+			<target_except identity="operator" desc="线上运营"/>
+			<target_except identity="agent" desc="官方代理"/>
+			<target_except identity="patrolman" desc="巡管"/>
+		</param>
+		</item>
+	<!---->
+	<!--特殊道具-->
+	<item id="0x3001" name="小喇叭" type="loudspeaker" target="nobody" range="all in region" catalog="道具" unit="个" icon="3002.png" image="3002.gif">
+		<desc content="10000币/条，同区房间能收到"/>
+		<param>
+			<common price="10000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x3002" name="大喇叭" type="loudspeaker" target="nobody" range="all" catalog="道具" unit="个" icon="3002.png" image="3002.gif">
+		<desc content="40000币/条，所有房间能收到"/>
+		<param>
+			<common price="40000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x3003" name="超级喇叭" type="loudspeaker" target="nobody" range="all" catalog="道具" unit="个" icon="3002.png" image="3002.gif">
+		<desc content="60000币/条，插入房间快捷入口，方便众人直达本房间"/>
+		<param>
+			<common price="60000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+		<item id="0x3004" name="闪亮登场" type="blink enter" target="self" range="one" catalog="道具" unit="个" icon="3004.png" image="3004.gif">
+		<desc content="闪亮登场，让您与众不同"/>
+		<tipbtn content="点此使用"/>
+		<prescription content="7天"/>
+		<senddesc content="一道金光闪过"/>
+		<param>
+			<common price="100000" use_means="time" quantity="604800"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x3009" name="高调亮相" type="blink enter" target="self" range="one" catalog="道具" unit="个" icon="3009.png" image="3009.gif">
+		<desc content="高调亮相，彰显非凡魅力"/>
+		<tipbtn content="点此使用"/>
+		<prescription content="7天"/>
+		<senddesc content="香车美女相伴"/>
+		<param>
+			<common price="100000" use_means="time" quantity="604800"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<item id="0x3005" name="天降财神" type="the god of wealth" target="everyone_except_self" range="all in room" catalog="友谊" unit="尊" icon="3005.png" image="3005.gif" tempnotice="true" >
+		<desc content="赠与房间内所有用户，财神可能下凡赏赐众人"/>
+		<param>
+			<common price="20" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="3"/>
+			<jackpot money="30" threshold="30000"/>
+			<bonus max_bonus_money_once="20000" min_bonus_money_total="12000" max_bonus_money_total="24000000"/>
+			<defall max_count="10"/>
+			<probability befall_own_room="5000"/>
+		</param>
+	</item>	
+	 <item id="0x3006" name="烟花" type="firework" target="everyone_except_self" range="management in room" catalog="友谊" unit="束" icon="3006.png" image="3006.gif">
+    <desc content="平均分配给当前房间的所有管理员"/>
+        <param>
+          <common price="100000" use_means="count" quantity="1"/>
+          <viplevel min="normal" max="king"/>
+          <donee money="80000"/>
+        </param>
+  	</item>
+	<item id="0x3007" name="礼炮" type="saulting gun" target="everyone_except_self" range="all in room" catalog="友谊" unit="门" icon="3007.png" image="3007.gif" tempnotice="true" >
+		<desc content="平均分配给当前房间的所有用户"/>
+		<param>
+			<common price="200000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="160000"/>
+		</param>
+   </item>
+	<item id="0x1007" name="蛋糕" type="normal" target="everyone_except_self" range="all in room" catalog="友谊" unit="块" icon="1007.png" image="1007.gif">
+		<desc content="赠与房间内所有用户"/>
+		<param>
+			<common price="100" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="45"/>
+		</param>
+	</item>
+	<item id="0x1051" name="香蕉先生" type="normal" target="everyone_except_self" range="one" catalog="友谊" unit="个" icon="1051.png" image="1051.gif">
+		<param>
+			<common price="50000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+			<donee money="37500"/>
+		</param>	
+	</item>		
+	<item id="0x3008" name="飞屏" type="fly words" target="nobody" range="all in room" catalog="道具" unit="个" icon="test.img" image="test.jpg">
+		<desc content="飞屏"/>
+		<param>
+			<common price="10000" use_means="count" quantity="1"/>
+			<viplevel min="normal" max="king"/>
+		</param>
+	</item>
+	<!---->
+</prop>

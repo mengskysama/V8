@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CombineGift>
+<!--
+<Item id="0">
+	<Images>
+		<Image index="1" path="plane_1.png"/>
+		<Image index="2" path="plane_2.png"/>
+	</Images>
+	<NickName fontfamily="黑体" fontsize="20" begincolor="#E6B002" endcolor="#E6B002" bold="true" italic="true" underline="true" strokecolor="" gradientmode="1"/>
+	<Say fontfamily="黑体" fontsize="26" begincolor="#E6B002" endcolor="#E6B002" bold="true" italic="true" underline="false" strokecolor="" gradientmode="1"/>
+	<Content fontfamily="黑体" fontsize="36" begincolor="#FCE8FB" endcolor="#D77AEF" bold="true" italic="true" underline="false" strokecolor="#AF57D9" gradientmode="1" shadowcolor=""/>
+</Item>-->
+<Item id="1">
+	<Images>
+		<Image index="1" path="rocket_1.png"/>
+		<Image index="2" path="rocket_2.png"/>
+	</Images>
+	<NickName fontfamily="微软雅黑" fontsize="19" begincolor="#6D33FF" endcolor="#6D33FF" bold="false" italic="true" underline="false" strokecolor="#FFFFFF" gradientmode="1"/>
+	<Say fontfamily="黑体" fontsize="21" begincolor="#6D33FF" endcolor="#6D33FF" bold="true" italic="true" underline="false" strokecolor="#FFFFFF" gradientmode="1"/>
+	<Content fontfamily="黑体" fontsize="30" begincolor="#FFFFFF" endcolor="#FF45C3" bold="true" italic="true" underline="false" strokecolor="#940076" gradientmode="1" shadowcolor="#D971FF"/>
+</Item>
+<Item id="2">
+	<Images>
+		<Image index="1" path="plane_1.png"/>
+		<Image index="2" path="plane_2.png"/>
+	</Images>
+	<NickName fontfamily="微软雅黑" fontsize="19" begincolor="#E08400" endcolor="#FFCC00" bold="false" italic="true" underline="false" strokecolor="#FFFFFF" gradientmode="1"/>
+	<Say fontfamily="黑体" fontsize="21" begincolor="#E08400" endcolor="#FFCC00" bold="true" italic="true" underline="false" strokecolor="#FFFFFF" gradientmode="1"/>
+	<Content fontfamily="黑体" fontsize="30" begincolor="#FCF636" endcolor="#EA8F00" bold="true" italic="true" underline="false" strokecolor="#A05A00" gradientmode="1" shadowcolor="#008AF4"/>
+</Item>
+<Item id="3">
+	<Images>
+		<Image index="1" path="feather_1.png"/>
+		<Image index="2" path="feather_2.png"/>
+	</Images>
+	<NickName fontfamily="微软雅黑" fontsize="19" begincolor="#005FFF" endcolor="#005FFF" bold="false" italic="true" underline="false" strokecolor="#FFFFFF" gradientmode="1"/>
+	<Say fontfamily="黑体" fontsize="21" begincolor="#005FFF" endcolor="#005FFF" bold="true" italic="true" underline="false" strokecolor="#FFFFFF" gradientmode="1"/>
+	<Content fontfamily="黑体" fontsize="30" begincolor="#F8F2FF" endcolor="#CF5CFF" bold="true" italic="true" underline="false" strokecolor="#5000A9" gradientmode="1" shadowcolor="#FFAE00"/>
+</Item>
+<Item id="4">
+	<Images>
+		<Image index="1" path="paperplane_1.png"/>
+		<Image index="2" path="paperplane_2.png"/>
+	</Images>
+	<NickName fontfamily="微软雅黑" fontsize="19" begincolor="#FFFFFF" endcolor="#FFF993" bold="false" italic="true" underline="false" strokecolor="#C68214" gradientmode="1"/>
+	<Say fontfamily="黑体" fontsize="21" begincolor="#FFFFFF" endcolor="#FFF993" bold="true" italic="true" underline="false" strokecolor="#C68214" gradientmode="1"/>
+	<Content fontfamily="黑体" fontsize="30" begincolor="#00AEFF" endcolor="#3800F0" bold="true" italic="true" underline="false" strokecolor="#FFFFFF" gradientmode="1" shadowcolor="#DD9200"/>
+</Item>
+</CombineGift>

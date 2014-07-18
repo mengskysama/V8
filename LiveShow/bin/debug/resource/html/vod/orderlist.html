@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>已点歌曲</title>
+<link href="source/base.css" rel="stylesheet" type="text/css" />
+<link href="source/vod.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="wrap clearfix">
+	<p class="tr f12 hill_music_text">当前房间已点歌曲 <em class="fontfb fb">0</em> 首</p>
+    
+    <div class="hill_MusicList clearfix">
+    	<div class="MusicList_Item">
+			<dl>
+				<dt class="w71 tc">时间</dt>
+				<dt class="w128">歌名</dt>
+				<dt class="w110">歌手</dt>
+				<dt class="w110">点播粉丝</dt>
+				<dt class="w71 tc">点播赠言</dt>
+				<dt class="w71 tc">插播费</dt>
+				<dt class="w65 tc">状态</dt>
+				<dt class="w65 tc">评价</dt>
+			</dl>
+			<div id="list"></div>
+
+			<p class="c8 h30 lh200 tr f12 viewCont">
+				<input type="checkbox" class="vm" onclick="showOrderListInfo(0)" name="showMe" /> <span class="vm">只显示我的歌曲</span>
+			</p>
+		</div>
+        
+		<div class="pageView"></div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.json-2.4.min.js"></script>
+<script type="text/javascript" src="source/vod.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#list").find(".more_message").css({'z-index':0});
+	$("#list").find(".message_border").css({'z-index':0});
+	$("#list").delegate('.more_message','mousemove', function(){
+		$(this).siblings(".message_border").removeClass("none");
+		$(this).css({'z-index':2});
+	}).find(".message_border").css({'z-index':1});
+	
+	$("#list").delegate('.more_message','mouseout', function(){
+		$(this).siblings(".message_border").addClass("none");
+		$(this).css({'z-index':0});
+	});
+	
+	$("#list").delegate('dl','mousemove', function(){
+		$(this).removeClass().addClass("bg");
+	});
+	
+	$("#list").delegate('dl','mouseout', function(){
+		$(this).removeClass();
+	});
+});
+
+function showOrderListInfo(currPage){
+	var orderList = $.toJSON(vodVarOrderList); // 赋值到新变量中
+	
+	orderList = eval(orderList);
+	if($("input[name='showMe']:checked").val()=="on"){
+		for(var i=0; i < orderList.length; i++){
+			if( (vodVarUin != orderList[i].RoleID && vodVarIsArtist == 1) || (vodVarUin != orderList[i].UserID && vodVarIsArtist == 0) ){
+				orderList.splice(i,1);
+				i--; //重置索引
+			}
+		}
+	}
+	
+	vodVarSongNum = orderList.length;
+
+	var perPage = 8;
+	
+	if(currPage==0){
+		currPage = Math.ceil(vodVarSongNum / perPage);
+	}
+	
+	var offset = (currPage-1) * perPage;
+	if(perPage > vodVarSongNum){
+		var len = offset + vodVarSongNum;
+	}else{
+		var len = offset + perPage;
+	}
+	
+	if(len > vodVarSongNum){
+		var len = vodVarSongNum;
+	}
+	
+	var content = '';
+	for(var item = offset; item < len; item++){
+		content += '<dl>';
+		content += '  <dd class="w71 tc"><em class="c8">'+orderList[item].time+'</em></dd>';
+		content += '  <dd class="w128">'+orderList[item].song+'</dd>';
+		content += '  <dd class="w110">'+orderList[item].RoleName+'</dd>';
+		
+		if(orderList[item].wish){
+			content += '  <dd class="w181 imm">'+orderList[item].UserName;
+			content += '    <i class="more_message"></i>';
+			content += '    <div class="message_border none">'+orderList[item].wish+'</div>';
+			content += '  </dd>';
+		}else{
+			content += '  <dd class="w110">'+orderList[item].UserName+'</dd>';
+			content += '  <dd class="w71"></dd>';
+		}
+		
+		content += '<dd class="w71 tc">'+orderList[item].priority+'</dd>';
+
+		content += '  <dd class="w65 tc" id="orderId_'+ orderList[item].orderID +'">';
+		switch( parseInt(orderList[item].stat) ){
+			case 1:
+				content += '<em class="btn_yes">已同意</em>';
+				break;
+		    case 2:
+				content += '<em class="btn_yes">已拒绝</em>';
+			    break;
+		    default :
+				if(vodVarUin == orderList[item].RoleID && vodVarIsArtist == 1){
+					content += '<a href="javascript:void(0);" class="btn_agree" onclick="vodDecideSong('+ orderList[item].orderID +', 1)">接受</a> ';
+					content += '<a href="javascript:void(0);" class="btn_reject" onclick="vodDecideSong('+ orderList[item].orderID +', 0)">拒绝</a>'; 
+				}else{
+					content += '待处理';
+				}
+				break;
+		}
+		content += '  </dd>';
+		
+		content += '<dd class="w65 tc">';
+		switch( parseInt(orderList[item].evaluate) ){
+			case 0:
+				content += '待评';
+				break;
+			case 1:
+				content += '<em class="evaluate_fc1">弃评</em>';
+				break;
+		    case 2:
+				content += '<em class="evaluate_fc2">差评</em>';
+			    break;
+		    case 3:
+				content += '<em class="evaluate_fc3">好评</em>';
+			    break;
+		    default :
+				content += '-';
+				break;
+		}
+		content += '  </dd>';
+		
+		content += '</dl>';
+	}
+	
+	//展示歌曲总数
+	$(".hill_music_text > em").text(vodVarSongNum);
+	
+	//展示列表内容
+	$("#list").html(content);
+	
+	//调用分页
+	var pageStr = vodAjaxPage('showOrderListInfo', vodVarSongNum, currPage, perPage);
+	$(".pageView").html(pageStr);
+}
+</script>
+</body>
+</html>
